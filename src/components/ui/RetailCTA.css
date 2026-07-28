@@ -1,0 +1,22 @@
+.retail-cta {
+  background-color: var(--color-black-card);
+  border: 1px solid var(--color-grey-line);
+  border-radius: var(--radius);
+  padding: var(--space-xl);
+  margin: var(--space-2xl) 0;
+}
+
+.retail-cta__heading {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.retail-cta__copy {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-lg);
+  max-width: 520px;
+}
+
+.retail-cta__btn {
+  display: inline-flex;
+}

@@ -14,6 +14,7 @@ import ArticlePage from '@/pages/ArticlePage'
 import ContactPage from '@/pages/ContactPage'
 import PrivacyPage from '@/pages/PrivacyPage'
 import TermsPage from '@/pages/TermsPage'
+import PillarGuidePage from '@/pages/PillarGuidePage'
 import NotFoundPage from '@/pages/NotFoundPage'
 
 function ScrollToTop() {
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="/our-story" element={<OurStoryPage />} />
         <Route path="/journal" element={<JournalPage />} />
         <Route path="/journal/:slug" element={<ArticlePage />} />
+        <Route path="/small-dog-harness-guide" element={<PillarGuidePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
