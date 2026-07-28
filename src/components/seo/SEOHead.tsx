@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/config/site'
 
 interface SEOHeadProps {
   title: string
@@ -6,11 +7,8 @@ interface SEOHeadProps {
   canonical?: string
   ogImage?: string
   article?: boolean
+  noindex?: boolean
 }
-
-const SITE_URL = 'https://mypupandme.co.uk'
-const SITE_NAME = 'My Pup and Me'
-const DEFAULT_OG_IMAGE = '/assets/og-image.jpg'
 
 function setMeta(name: string, content: string, property = false) {
   const attr = property ? 'property' : 'name'
@@ -39,11 +37,9 @@ export default function SEOHead({
   canonical,
   ogImage,
   article = false,
+  noindex = false,
 }: SEOHeadProps) {
-  const fullTitle = title === 'Home'
-    ? `${SITE_NAME} — Beautifully Designed for Little Dogs`
-    : `${title} | ${SITE_NAME}`
-
+  const fullTitle = title
   const url = canonical ? `${SITE_URL}${canonical}` : SITE_URL
   const image = `${SITE_URL}${ogImage || DEFAULT_OG_IMAGE}`
 
@@ -51,6 +47,10 @@ export default function SEOHead({
     document.title = fullTitle
     setMeta('description', description)
     setLink('canonical', url)
+
+    if (noindex) {
+      setMeta('robots', 'noindex, nofollow')
+    }
 
     // Open Graph
     setMeta('og:type', article ? 'article' : 'website', true)
@@ -66,7 +66,7 @@ export default function SEOHead({
     setMeta('twitter:title', fullTitle)
     setMeta('twitter:description', description)
     setMeta('twitter:image', image)
-  }, [fullTitle, description, url, image, article])
+  }, [fullTitle, description, url, image, article, noindex])
 
   return null
 }

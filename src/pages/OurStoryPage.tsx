@@ -16,8 +16,8 @@ export default function OurStoryPage() {
   return (
     <>
       <SEOHead
-        title="Our Story"
-        description="My Pup and Me was created for owners who want their small dog to look and feel their best. Learn about our growing range of harnesses and leads for little dogs."
+        title="Harnesses Designed for Little Dogs — Our Story | My Pup and Me"
+        description="Why we created My Pup and Me: lightweight, properly proportioned harnesses for puppies, toy breeds and very small dogs who deserve more than scaled-down accessories."
         canonical="/our-story"
       />
       <StructuredData data={breadcrumbSchema} />

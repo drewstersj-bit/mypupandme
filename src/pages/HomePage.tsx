@@ -1,5 +1,5 @@
 import SEOHead from '@/components/seo/SEOHead'
-import { OrganizationSchema, WebSiteSchema } from '@/components/seo/StructuredData'
+import { OrganizationSchema, WebSiteSchema, BrandSchema } from '@/components/seo/StructuredData'
 import StructuredData from '@/components/seo/StructuredData'
 import Hero from '@/components/sections/Hero'
 import TrustStrip from '@/components/sections/TrustStrip'
@@ -43,11 +43,12 @@ export default function HomePage() {
   return (
     <>
       <SEOHead
-        title="Home"
-        description="Lightweight harnesses and matching leads designed for puppies, toy breeds and very small dogs. Four distinctive prints, sizes XXS to S. Shop at My Chi and Me."
+        title="Small Dog Harnesses & Matching Leads | My Pup and Me"
+        description="Discover lightweight harnesses and matching leads designed for puppies, toy breeds and very small dogs. Available in XXS–S from My Chi and Me."
         canonical="/"
       />
       <OrganizationSchema />
+      <BrandSchema />
       <WebSiteSchema />
       <StructuredData data={productListSchema} />
 

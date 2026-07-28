@@ -55,8 +55,8 @@ export default function CollectionPage() {
   return (
     <>
       <SEOHead
-        title="Shop the Collection"
-        description="Browse the My Pup and Me collection of luxury harnesses and matching leads for small dogs. Available in Blue Meadow Floral, White Vintage Floral, Brown Tartan and Classic Tweed."
+        title="Small Dog Harness Collection | My Pup and Me"
+        description="Shop stylish small dog harnesses in XXS–S with matching leads. Designed for puppies and toy breeds and available from our sister site, My Chi and Me."
         canonical="/collection"
       />
       <StructuredData data={itemListSchema} />

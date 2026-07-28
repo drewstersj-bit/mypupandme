@@ -37,8 +37,8 @@ export default function JournalPage() {
   return (
     <>
       <SEOHead
-        title="Little Dog Journal"
-        description="Helpful advice and inspiration for owners of puppies, toy breeds and small dogs. From sizing guides to harness tips."
+        title="Small Dog Harness Advice & Guides | My Pup and Me"
+        description="Practical advice on sizing, comfort and choosing the right harness for puppies, toy breeds and very small dogs."
         canonical="/journal"
       />
       <StructuredData data={breadcrumbSchema} />

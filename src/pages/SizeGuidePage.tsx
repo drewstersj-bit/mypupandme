@@ -17,8 +17,8 @@ export default function SizeGuidePage() {
   return (
     <>
       <SEOHead
-        title="Size Guide"
-        description="Find the right harness size for your small dog. Sizing available in XXS, XS and S for puppies, toy breeds and small dogs with chest measurements from 20cm to 38cm."
+        title="Small Dog Harness Size Guide | My Pup and Me"
+        description="Learn how to measure your puppy or small dog for a harness and compare our XXS, XS and S chest and neck measurements."
         canonical="/size-guide"
       />
       <StructuredData data={breadcrumbSchema} />
