@@ -14,9 +14,14 @@ export default function ProductCard({ product }: ProductCardProps) {
     <article className="product-card">
       <a href={product.shopUrl} target="_blank" rel="noopener noreferrer" className="product-card__link" aria-label={`View ${product.name} on shop`}>
         <div className="product-card__image-wrap">
-          <div className="product-card__image-fallback">
-            <span>{product.pattern}</span>
-          </div>
+          <img
+            src={product.image}
+            alt={product.imageAlt}
+            className="product-card__image"
+            loading="lazy"
+            width="400"
+            height="500"
+          />
           {product.matchingProduct && product.category === 'harness' && (
             <span className="product-card__badge">+ Matching Lead</span>
           )}

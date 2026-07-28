@@ -63,6 +63,15 @@
   color: var(--color-grey-dim);
 }
 
+.pattern-collection__image {
+  aspect-ratio: 1;
+  max-width: 420px;
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+  background-color: var(--color-black-card);
+}
+
 .pattern-collection__info h3 {
   font-family: var(--font-heading);
   margin-bottom: var(--space-sm);

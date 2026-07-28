@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer__grid">
           <div>
             <img
-              src="/assets/logo-on-black.png"
+              src="/onblack.jpg"
               alt="My Pup and Me"
               className="footer__brand-logo"
               width="140"

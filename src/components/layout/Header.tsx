@@ -22,7 +22,7 @@ export default function Header() {
       <div className="header__inner container">
         <Link to="/" className="header__logo" aria-label="My Pup and Me — Home" onClick={closeMenu}>
           <img
-            src="/assets/logo-on-black.png"
+            src="/onblack.jpg"
             alt="My Pup and Me"
             className="header__logo-img"
             width="160"

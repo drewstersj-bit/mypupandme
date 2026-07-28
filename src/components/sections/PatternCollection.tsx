@@ -33,9 +33,14 @@ export default function PatternCollection() {
         <div id="pattern-display" role="tabpanel" className="pattern-collection__display" aria-label={`${activePattern} harness preview`}>
           {harness && (
             <>
-              <div className="pattern-collection__image-fallback">
-                <span>{activePattern}</span>
-              </div>
+              <img
+                src={harness.image}
+                alt={harness.imageAlt}
+                className="pattern-collection__image"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
               <div className="pattern-collection__info">
                 <h3>{harness.name.replace('Luxury ', '')}</h3>
                 <p>{harness.shortDescription}</p>
