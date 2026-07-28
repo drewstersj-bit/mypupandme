@@ -6,15 +6,33 @@ export default function EmailSignup() {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState('')
+  const [submitting, setSubmitting] = useState(false)
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
     if (!email || !email.includes('@')) {
       setError('Please enter a valid email address.')
       return
     }
     setError('')
-    setSubmitted(true)
+    setSubmitting(true)
+
+    try {
+      const formData = new URLSearchParams()
+      formData.append('form-name', 'newsletter')
+      formData.append('email', email)
+
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formData.toString(),
+      })
+      setSubmitted(true)
+    } catch {
+      setError('Something went wrong. Please try again.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -57,8 +75,8 @@ export default function EmailSignup() {
                   aria-required="true"
                   aria-describedby={error ? 'signup-error' : undefined}
                 />
-                <button type="submit" className="btn btn--primary btn--md">
-                  Sign Up
+                <button type="submit" className="btn btn--primary btn--md" disabled={submitting}>
+                  {submitting ? 'Signing up…' : 'Sign Up'}
                 </button>
               </div>
               {error && (

@@ -8,9 +8,14 @@ export default function ComfortSection() {
       <div className="container">
         <div className="comfort-section__grid">
           <div className="comfort-section__visual">
-            <div className="comfort-section__img-fallback">
-              <span>Product close-up<br/>Mesh, buckle and webbing detail</span>
-            </div>
+            <img
+              src="/assets/products/MPAM_tartan_harness_close.jpg"
+              alt="Close-up of a Brown Tartan harness showing the air-mesh lining, buckle and webbing strap"
+              className="comfort-section__img"
+              width="600"
+              height="450"
+              loading="lazy"
+            />
             <div className="comfort-section__features">
               <div className="comfort-section__feature">
                 <span className="comfort-section__dot" aria-hidden="true" />

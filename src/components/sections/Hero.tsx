@@ -38,13 +38,13 @@ export default function Hero() {
           <p className="hero__trust-line">Available in XXS–S • UK small-dog specialists • Matching leads available</p>
         </div>
         <div className="hero__image-wrap">
-          <div className="hero__image-fallback">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#737373" strokeWidth="1" aria-hidden="true">
-              <rect x="2" y="2" width="20" height="20" rx="2"/>
-              <path d="M8 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2 18l5-5 3 3 4-4 8 8"/>
-            </svg>
-            <span>Hero lifestyle image<br/>Small dog wearing harness</span>
-          </div>
+          <img
+            src="/assets/lifestyle/Meadow_Floral_Izzy_5_800x800.jpg"
+            alt="Small dog wearing a My Pup and Me Blue Meadow Floral harness"
+            className="hero__image"
+            width="800"
+            height="800"
+          />
         </div>
       </div>
     </section>

@@ -4,19 +4,39 @@ import './ContactPage.css'
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
     if (!formData.name || !formData.email || !formData.message) return
-    setSubmitted(true)
+    setSubmitting(true)
+
+    try {
+      const body = new URLSearchParams()
+      body.append('form-name', 'contact')
+      body.append('name', formData.name)
+      body.append('email', formData.email)
+      body.append('message', formData.message)
+
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      })
+      setSubmitted(true)
+    } catch {
+      alert('Something went wrong. Please email info@mychiandme.co.uk directly.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
     <>
       <SEOHead
-        title="Contact Us"
-        description="Get in touch with the My Pup and Me team. We'd love to hear from you about our harnesses and leads for small dogs."
+        title="Contact Us | My Pup and Me"
+        description="Get in touch with the My Pup and Me team about sizing, patterns or anything else."
         canonical="/contact"
       />
 
@@ -80,8 +100,8 @@ export default function ContactPage() {
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   />
                 </div>
-                <button type="submit" className="btn btn--primary btn--md">
-                  Send Message
+                <button type="submit" className="btn btn--primary btn--md" disabled={submitting}>
+                  {submitting ? 'Sending…' : 'Send Message'}
                 </button>
               </form>
             )}

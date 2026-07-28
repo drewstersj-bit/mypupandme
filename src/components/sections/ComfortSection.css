@@ -15,20 +15,11 @@
   gap: var(--space-lg);
 }
 
-.comfort-section__img-fallback {
+.comfort-section__img {
+  width: 100%;
   aspect-ratio: 4/3;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-lg);
-}
-
-.comfort-section__img-fallback span {
-  font-size: var(--font-size-sm);
-  color: var(--color-grey-dim);
-  text-align: center;
+  object-fit: cover;
 }
 
 .comfort-section__features {

@@ -7,14 +7,22 @@ export default function BrandStatement() {
         <div className="brand-statement__grid">
           <div className="brand-statement__images">
             <div className="brand-statement__img brand-statement__img--main">
-              <div className="brand-statement__img-fallback">
-                <span>Lifestyle image<br/>Small dog on a walk</span>
-              </div>
+              <img
+                src="/assets/lifestyle/Tweed_Zac_2_800x800.jpg"
+                alt="Small dog wearing a Classic Tweed harness by My Pup and Me on a walk"
+                width="800"
+                height="800"
+                loading="lazy"
+              />
             </div>
             <div className="brand-statement__img brand-statement__img--detail">
-              <div className="brand-statement__img-fallback brand-statement__img-fallback--dark">
-                <span>Detail crop<br/>Harness close-up</span>
-              </div>
+              <img
+                src="/assets/products/MPAM_meadow_floral_harness_close.jpg"
+                alt="Close-up of harness padding, mesh lining and branded buckle"
+                width="400"
+                height="600"
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="brand-statement__content">
