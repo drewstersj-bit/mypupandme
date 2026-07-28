@@ -13,12 +13,12 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# Redirect Netlify subdomain to custom domain when configured
-[[redirects]]
-  from = "https://mypupandme.netlify.app/*"
-  to = "https://mypupandme.co.uk/:splat"
-  status = 301
-  force = true
+# Redirect Netlify subdomain to custom domain (enable once DNS is pointed to Netlify)
+# [[redirects]]
+#   from = "https://mypupandme.netlify.app/*"
+#   to = "https://mypupandme.co.uk/:splat"
+#   status = 301
+#   force = true
 
 # Trailing slash consistency — no trailing slashes
 [[redirects]]
