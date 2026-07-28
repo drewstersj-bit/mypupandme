@@ -164,11 +164,11 @@ const pages: PageMeta[] = [
     ],
   },
   {
-    path: '/journal/what-makes-a-good-harness-for-a-toy-breed',
+    path: '/journal/best-harness-for-a-toy-breed',
     title: 'Best Harness for a Toy Breed | My Pup and Me',
     description: 'Why toy breeds need purpose-built harnesses: lightweight materials, proportionate straps and compact hardware. Key features explained.',
     h1: 'What Makes a Good Harness for a Toy Breed?',
-    canonical: '/journal/what-makes-a-good-harness-for-a-toy-breed',
+    canonical: '/journal/best-harness-for-a-toy-breed',
     structuredData: [
       {
         '@context': 'https://schema.org',

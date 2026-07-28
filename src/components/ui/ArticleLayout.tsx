@@ -55,7 +55,7 @@ export default function ArticleLayout({ article, children, showRetailCTA = true 
             <nav className="article-layout__breadcrumb" aria-label="Breadcrumb">
               <Link to="/">Home</Link>
               <span aria-hidden="true"> / </span>
-              <Link to="/journal">Journal</Link>
+              <Link to="/journal">Handy Guides</Link>
               <span aria-hidden="true"> / </span>
               <span aria-current="page">{article.title}</span>
             </nav>

@@ -43,7 +43,7 @@ export default function Footer() {
             <h3 className="footer__heading">Discover</h3>
             <ul className="footer__list">
               <li><Link to="/our-story" className="footer__link">Our Story</Link></li>
-              <li><Link to="/journal" className="footer__link">Journal</Link></li>
+              <li><Link to="/journal" className="footer__link">Handy Guides</Link></li>
               <li><Link to="/contact" className="footer__link">Contact</Link></li>
             </ul>
           </div>

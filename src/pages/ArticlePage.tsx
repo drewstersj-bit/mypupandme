@@ -340,7 +340,7 @@ export default function ArticlePage() {
         <div className="section container container--narrow">
           <h1>Article Not Found</h1>
           <p>Sorry, this article could not be found.</p>
-          <Button to="/journal" variant="primary" size="md">Back to Journal</Button>
+          <Button to="/journal" variant="primary" size="md">Back to Handy Guides</Button>
         </div>
       </main>
     )

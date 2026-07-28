@@ -8,7 +8,7 @@ const navLinks = [
   { to: '/collection', label: 'Shop the Collection' },
   { to: '/size-guide', label: 'Size Guide' },
   { to: '/our-story', label: 'Our Story' },
-  { to: '/journal', label: 'Journal' },
+  { to: '/journal', label: 'Handy Guides' },
 ]
 
 export default function Header() {

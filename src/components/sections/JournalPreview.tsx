@@ -13,7 +13,7 @@ const articles = [
     label: 'Guide',
   },
   {
-    slug: 'what-makes-a-good-harness-for-a-toy-breed',
+    slug: 'best-harness-for-a-toy-breed',
     title: 'What Makes a Good Toy-Breed Harness?',
     label: 'Guide',
   },

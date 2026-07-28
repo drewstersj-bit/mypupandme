@@ -22,7 +22,7 @@ const expectedRoutes = [
   '/journal',
   '/journal/how-to-measure-a-small-dog-for-a-harness',
   '/journal/choosing-a-comfortable-harness-for-a-puppy',
-  '/journal/what-makes-a-good-harness-for-a-toy-breed',
+  '/journal/best-harness-for-a-toy-breed',
   '/contact',
   '/privacy',
   '/terms',
