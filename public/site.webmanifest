@@ -1,0 +1,14 @@
+{
+  "name": "My Pup and Me",
+  "short_name": "My Pup and Me",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0B0B0B",
+  "background_color": "#0B0B0B",
+  "display": "standalone"
+}
