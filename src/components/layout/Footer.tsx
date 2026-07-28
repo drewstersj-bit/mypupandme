@@ -7,8 +7,15 @@ export default function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div>
+            <svg className="footer__brand-logo" viewBox="0 0 180 32" width="150" height="28" aria-label="My Pup and Me">
+              <text x="2" y="26" fontFamily="'Brush Script MT', cursive" fontSize="21" fill="#FFFFFF" fontStyle="italic">my</text>
+              <text x="32" y="27" fontFamily="'Brush Script MT', cursive" fontSize="28" fontWeight="700" fill="#FFFFFF" fontStyle="italic">Pup</text>
+              <text x="82" y="26" fontFamily="'Inter', sans-serif" fontSize="9" fill="#FFFFFF" letterSpacing="0.5">and</text>
+              <text x="105" y="26" fontFamily="'Inter', sans-serif" fontSize="18" fontWeight="700" fill="#FFFFFF">me</text>
+              <path d="M96 3c-1.2 0-2.2.7-2.6.9-.4-.2-1.4-.9-2.6-.9-2.2 0-4 2.1-4 4.5 0 4.2 6.6 8.5 6.6 8.5s6.6-4.3 6.6-8.5c0-2.4-1.8-4.5-4-4.5z" fill="#F20D19"/>
+            </svg>
             <p className="footer__brand-summary">
-              Beautifully designed harnesses and matching leads for puppies, toy breeds and small dogs with big personalities.
+              Stylish harnesses and matching leads for puppies, toy breeds and small dogs.
             </p>
           </div>
 
@@ -25,7 +32,7 @@ export default function Footer() {
             <h3 className="footer__heading">Discover</h3>
             <ul className="footer__list">
               <li><Link to="/our-story" className="footer__link">Our Story</Link></li>
-              <li><Link to="/journal" className="footer__link">Little Dog Journal</Link></li>
+              <li><Link to="/journal" className="footer__link">Journal</Link></li>
               <li><Link to="/contact" className="footer__link">Contact</Link></li>
             </ul>
           </div>
@@ -34,7 +41,7 @@ export default function Footer() {
             <h3 className="footer__heading">Legal</h3>
             <ul className="footer__list">
               <li><Link to="/privacy" className="footer__link">Privacy Policy</Link></li>
-              <li><Link to="/terms" className="footer__link">Terms &amp; Conditions</Link></li>
+              <li><Link to="/terms" className="footer__link">Terms</Link></li>
             </ul>
           </div>
         </div>
@@ -42,35 +49,21 @@ export default function Footer() {
         <div className="footer__bottom">
           <div>
             <p className="footer__copyright">
-              &copy; {new Date().getFullYear()} My Pup and Me. All rights reserved.
+              &copy; {new Date().getFullYear()} My Pup and Me
             </p>
             <p className="footer__parent-note">
-              My Pup and Me is brought to you by the team behind My Chi and Me.
+              Brought to you by the team behind My Chi and Me.
             </p>
           </div>
 
           <div className="footer__socials">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer__social-link"
-              aria-label="Follow us on Instagram"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <circle cx="12" cy="12" r="5"/>
-                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
               </svg>
             </a>
-            <a
-              href="https://www.facebook.com/mychiandme"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer__social-link"
-              aria-label="Follow us on Facebook"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <a href="https://www.facebook.com/mychiandme" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
               </svg>
             </a>

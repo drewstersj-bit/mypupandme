@@ -5,18 +5,22 @@ export default function BrandStatement() {
     <section className="section brand-statement" aria-labelledby="brand-heading">
       <div className="container">
         <div className="brand-statement__grid">
-          <img
-            src="/assets/lifestyle/brand-statement.jpg"
-            alt="Small dog enjoying a walk wearing a My Pup and Me harness"
-            className="brand-statement__image"
-            width="600"
-            height="450"
-            loading="lazy"
-          />
+          <div className="brand-statement__images">
+            <div className="brand-statement__img brand-statement__img--main">
+              <div className="brand-statement__img-fallback">
+                <span>Lifestyle image<br/>Small dog on a walk</span>
+              </div>
+            </div>
+            <div className="brand-statement__img brand-statement__img--detail">
+              <div className="brand-statement__img-fallback brand-statement__img-fallback--dark">
+                <span>Detail crop<br/>Harness close-up</span>
+              </div>
+            </div>
+          </div>
           <div className="brand-statement__content">
-            <h2 id="brand-heading">Made for their size. Designed for their personality.</h2>
+            <h2 id="brand-heading">Designed around little dogs.</h2>
             <p>
-              Small dogs deserve walking accessories that feel comfortable, fit properly and look every bit as distinctive as they are. My Pup and Me brings thoughtful proportions, dependable construction and beautifully selected fabrics together in one growing collection.
+              Because the smallest dogs deserve more than scaled-down accessories. Our harnesses combine lightweight comfort, adjustable proportions and prints with real personality.
             </p>
           </div>
         </div>

@@ -8,11 +8,11 @@ export default function PatternCollection() {
   const harness = patternProducts.find((p) => p.category === 'harness')
 
   return (
-    <section className="section section--white pattern-collection" aria-labelledby="pattern-heading">
+    <section className="section pattern-collection" aria-labelledby="pattern-heading">
       <div className="container">
         <header className="pattern-collection__header">
-          <h2 id="pattern-heading">Four Beautiful Designs</h2>
-          <p>Each pattern available as a harness with a matching lead for a coordinated look.</p>
+          <h2 id="pattern-heading">Four designs. Your pick.</h2>
+          <p>Each available as a harness with a matching lead.</p>
         </header>
 
         <div className="pattern-collection__selector" role="tablist" aria-label="Select a pattern">
@@ -32,17 +32,12 @@ export default function PatternCollection() {
 
         <div id="pattern-display" role="tabpanel" className="pattern-collection__display" aria-label={`${activePattern} harness preview`}>
           {harness && (
-            <div className="pattern-collection__preview">
-              <img
-                src={harness.image}
-                alt={harness.imageAlt}
-                className="pattern-collection__image"
-                width="400"
-                height="400"
-                loading="lazy"
-              />
+            <>
+              <div className="pattern-collection__image-fallback">
+                <span>{activePattern}</span>
+              </div>
               <div className="pattern-collection__info">
-                <h3>{harness.name}</h3>
+                <h3>{harness.name.replace('Luxury ', '')}</h3>
                 <p>{harness.shortDescription}</p>
                 <p className="pattern-collection__price">£{harness.price.toFixed(2)}</p>
                 <a
@@ -54,7 +49,7 @@ export default function PatternCollection() {
                   Shop This Design
                 </a>
               </div>
-            </div>
+            </>
           )}
         </div>
       </div>

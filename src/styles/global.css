@@ -1,32 +1,32 @@
 /* ============================================
-   MY PUP AND ME — Design System & Global Styles
+   MY PUP AND ME — Design System 2.0
+   Contemporary / Fashion-led / Black-White-Red
    ============================================ */
 
-/* Design Tokens */
 :root {
-  /* Colours */
-  --color-ivory: #F8F5EF;
-  --color-cream: #EFE9DE;
-  --color-charcoal: #252525;
-  --color-warm-grey: #6E6A64;
-  --color-red: #C94045;
-  --color-red-hover: #B53539;
-  --color-sage: #A7B09A;
+  /* Colours — derived from logo */
+  --color-black: #0B0B0B;
   --color-white: #FFFFFF;
-  --color-stone: #D4CFC7;
+  --color-red: #F20D19;
+  --color-red-hover: #D90B15;
+  --color-bg: #F7F7F5;
+  --color-grey-light: #E9E9E6;
+  --color-grey: #737373;
+  --color-grey-dark: #404040;
+  --color-blush: #F7E9EA;
 
   /* Typography */
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-heading: 'Sora', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.8125rem;
   --font-size-base: 1rem;
-  --font-size-md: 1.125rem;
+  --font-size-md: 1.0625rem;
   --font-size-lg: 1.25rem;
   --font-size-xl: 1.5rem;
   --font-size-2xl: 2rem;
-  --font-size-3xl: 2.5rem;
-  --font-size-4xl: 3.25rem;
+  --font-size-3xl: 2.75rem;
+  --font-size-4xl: 3.5rem;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -36,30 +36,22 @@
   --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: 4rem;
-  --space-4xl: 6rem;
-  --space-5xl: 8rem;
+  --space-4xl: 5rem;
 
   /* Layout */
-  --max-width: 1200px;
-  --max-width-narrow: 800px;
-  --border-radius: 8px;
-  --border-radius-lg: 12px;
+  --max-width: 1320px;
+  --max-width-narrow: 720px;
+  --radius: 6px;
+  --radius-lg: 10px;
 
   /* Transitions */
   --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
-  --transition-slow: 400ms ease;
-
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+  --transition-base: 200ms ease;
+  --transition-slow: 350ms ease;
 }
 
 /* Reset */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -71,14 +63,9 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -88,16 +75,13 @@ body {
   font-family: var(--font-body);
   font-size: var(--font-size-base);
   line-height: 1.6;
-  color: var(--color-charcoal);
-  background-color: var(--color-ivory);
+  color: var(--color-black);
+  background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-img,
-picture,
-video,
-svg {
+img, picture, video, svg {
   display: block;
   max-width: 100%;
   height: auto;
@@ -116,37 +100,33 @@ button {
   background: none;
 }
 
-ul,
-ol {
-  list-style: none;
-}
+ul, ol { list-style: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-weight: 700;
-  line-height: 1.2;
-  color: var(--color-charcoal);
+  line-height: 1.15;
+  color: var(--color-black);
+  letter-spacing: -0.02em;
 }
 
 h1 { font-size: var(--font-size-3xl); }
 h2 { font-size: var(--font-size-2xl); }
-h3 { font-size: var(--font-size-xl); }
-h4 { font-size: var(--font-size-lg); }
+h3 { font-size: var(--font-size-lg); }
+h4 { font-size: var(--font-size-md); }
 
 @media (min-width: 768px) {
   h1 { font-size: var(--font-size-4xl); }
   h2 { font-size: var(--font-size-3xl); }
-  h3 { font-size: var(--font-size-2xl); }
+  h3 { font-size: var(--font-size-xl); }
 }
 
 p {
-  color: var(--color-warm-grey);
+  color: var(--color-grey);
   margin-bottom: var(--space-md);
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
+p:last-child { margin-bottom: 0; }
 
 /* Skip link */
 .skip-link {
@@ -154,17 +134,15 @@ p:last-child {
   top: -40px;
   left: 0;
   padding: var(--space-sm) var(--space-md);
-  background: var(--color-charcoal);
+  background: var(--color-black);
   color: var(--color-white);
   z-index: 10000;
+  font-size: var(--font-size-sm);
   transition: top var(--transition-fast);
 }
+.skip-link:focus { top: 0; }
 
-.skip-link:focus {
-  top: 0;
-}
-
-/* Focus styles */
+/* Focus */
 :focus-visible {
   outline: 2px solid var(--color-red);
   outline-offset: 2px;
@@ -184,15 +162,13 @@ p:last-child {
 
 /* Section */
 .section {
-  padding: var(--space-4xl) 0;
+  padding: var(--space-3xl) 0;
 }
 
-.section--cream {
-  background-color: var(--color-cream);
-}
-
-.section--white {
-  background-color: var(--color-white);
+@media (min-width: 768px) {
+  .section {
+    padding: var(--space-4xl) 0;
+  }
 }
 
 /* Visually hidden */
@@ -208,13 +184,13 @@ p:last-child {
   border: 0;
 }
 
-/* Font loading */
+/* Fonts */
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: 'Sora';
   font-style: normal;
   font-weight: 400 700;
   font-display: swap;
-  src: url('https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vXDXbtM.woff2') format('woff2');
+  src: url('https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSdSnn-KIwNhBti0.woff2') format('woff2');
 }
 
 @font-face {

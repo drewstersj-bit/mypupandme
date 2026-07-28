@@ -1,21 +1,21 @@
 .collection-page__header {
-  text-align: center;
-  margin-bottom: var(--space-3xl);
+  margin-bottom: var(--space-2xl);
 }
 
 .collection-page__header p {
-  max-width: 550px;
-  margin: var(--space-md) auto 0;
+  max-width: 500px;
+  margin-top: var(--space-sm);
 }
 
 .collection-page__filters {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-lg);
-  margin-bottom: var(--space-xl);
-  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
   background-color: var(--color-white);
-  border-radius: var(--border-radius);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-grey-light);
 }
 
 .collection-page__filter-group {
@@ -28,47 +28,49 @@
   font-size: var(--font-size-xs);
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-charcoal);
+  letter-spacing: 0.06em;
+  color: var(--color-grey);
 }
 
 .collection-page__select {
   padding: var(--space-sm) var(--space-md);
-  border: 1px solid var(--color-stone);
-  border-radius: var(--border-radius);
+  border: 1px solid var(--color-grey-light);
+  border-radius: var(--radius);
   font-family: var(--font-body);
   font-size: var(--font-size-sm);
-  color: var(--color-charcoal);
+  color: var(--color-black);
   background-color: var(--color-white);
-  min-width: 180px;
+  min-width: 160px;
 }
 
 .collection-page__count {
   font-size: var(--font-size-sm);
-  color: var(--color-warm-grey);
-  margin-bottom: var(--space-xl);
+  color: var(--color-grey);
+  margin-bottom: var(--space-lg);
 }
 
 .collection-page__grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-xl);
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
 }
 
 .collection-page__empty {
   text-align: center;
   padding: var(--space-3xl) 0;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
+  color: var(--color-grey);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .collection-page__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
   }
 }
 
 @media (min-width: 1024px) {
   .collection-page__grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -6,7 +6,6 @@ import TrustStrip from '@/components/sections/TrustStrip'
 import FeaturedCollection from '@/components/sections/FeaturedCollection'
 import BrandStatement from '@/components/sections/BrandStatement'
 import ComfortSection from '@/components/sections/ComfortSection'
-import SizeGuidePreview from '@/components/sections/SizeGuidePreview'
 import PatternCollection from '@/components/sections/PatternCollection'
 import Community from '@/components/sections/Community'
 import JournalPreview from '@/components/sections/JournalPreview'
@@ -57,7 +56,6 @@ export default function HomePage() {
         <FeaturedCollection />
         <BrandStatement />
         <ComfortSection />
-        <SizeGuidePreview />
         <PatternCollection />
         <Community />
         <JournalPreview />

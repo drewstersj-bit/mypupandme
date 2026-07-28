@@ -6,13 +6,13 @@
 
 .not-found-page h1 {
   font-size: var(--font-size-4xl);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
 }
 
 .not-found-page__message {
-  font-size: var(--font-size-lg);
-  max-width: 500px;
-  margin: 0 auto var(--space-2xl);
+  font-size: var(--font-size-md);
+  max-width: 460px;
+  margin: 0 auto var(--space-xl);
 }
 
 .not-found-page__ctas {

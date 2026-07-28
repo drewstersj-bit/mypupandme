@@ -21,12 +21,15 @@ export default function EmailSignup() {
     <section className="section email-signup" aria-labelledby="signup-heading">
       <div className="container">
         <div className="email-signup__inner">
-          <h2 id="signup-heading">Join our little-dog club.</h2>
-          <p>Be first to discover new prints, new products and useful advice for life with a little dog.</p>
+          <svg className="email-signup__heart" width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M10 18s-7-4.5-7-10.5C3 4.5 5.5 2 8.5 2c1.5 0 2.7.8 3 1.2.3-.4 1.5-1.2 3-1.2C17.5 2 20 4.5 20 7.5 20 13.5 10 18 10 18z" fill="#F20D19" transform="translate(-3,-1) scale(0.9)"/>
+          </svg>
+          <h2 id="signup-heading">Join the little-dog club.</h2>
+          <p>New prints, useful advice and first looks—straight to your inbox.</p>
 
           {submitted ? (
             <div className="email-signup__success" role="alert">
-              <p>Thank you for joining! We'll be in touch with news and new arrivals.</p>
+              <p>You're in. We'll be in touch with news and new arrivals.</p>
             </div>
           ) : (
             <form
@@ -62,9 +65,8 @@ export default function EmailSignup() {
                 <p id="signup-error" className="email-signup__error" role="alert">{error}</p>
               )}
               <p className="email-signup__consent">
-                By signing up, you agree to receive email communications from My Pup and Me.
-                You can unsubscribe at any time. View our{' '}
-                <Link to="/privacy">Privacy Policy</Link>.
+                By signing up you agree to receive emails from My Pup and Me.
+                Unsubscribe any time. <Link to="/privacy">Privacy Policy</Link>
               </p>
             </form>
           )}
