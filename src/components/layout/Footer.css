@@ -1,7 +1,8 @@
 .footer {
-  background-color: var(--color-black);
+  background-color: var(--color-black-light);
   color: var(--color-white);
   padding: var(--space-3xl) 0 var(--space-lg);
+  border-top: 1px solid var(--color-grey-line);
 }
 
 .footer__grid {
@@ -12,11 +13,13 @@
 }
 
 .footer__brand-logo {
+  height: 32px;
+  width: auto;
   margin-bottom: var(--space-md);
 }
 
 .footer__brand-summary {
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--color-grey-dim);
   font-size: var(--font-size-sm);
   line-height: 1.6;
   max-width: 280px;
@@ -26,7 +29,7 @@
   font-family: var(--font-body);
   font-size: var(--font-size-xs);
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-grey-dim);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: var(--space-md);
@@ -39,7 +42,7 @@
 }
 
 .footer__link {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-grey);
   font-size: var(--font-size-sm);
   transition: color var(--transition-fast);
 }
@@ -49,7 +52,7 @@
 }
 
 .footer__bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--color-grey-line);
   padding-top: var(--space-lg);
   display: flex;
   flex-direction: column;
@@ -59,15 +62,16 @@
 }
 
 .footer__copyright {
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-grey-dim);
   font-size: var(--font-size-xs);
   margin: 0;
 }
 
 .footer__parent-note {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-grey-dim);
   font-size: var(--font-size-xs);
   margin: 0;
+  opacity: 0.6;
 }
 
 .footer__socials {
@@ -76,7 +80,7 @@
 }
 
 .footer__social-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-grey-dim);
   transition: color var(--transition-fast);
 }
 

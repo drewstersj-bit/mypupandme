@@ -1,8 +1,8 @@
 .trust-strip {
-  background-color: var(--color-bg);
+  background-color: var(--color-black-light);
   padding: var(--space-lg) 0;
-  border-bottom: 1px solid var(--color-grey-light);
-  border-top: 1px solid var(--color-grey-light);
+  border-bottom: 1px solid var(--color-grey-line);
+  border-top: 1px solid var(--color-grey-line);
 }
 
 .trust-strip__list {
@@ -23,14 +23,14 @@
 .trust-strip__divider {
   width: 1px;
   height: 14px;
-  background-color: var(--color-grey-light);
+  background-color: var(--color-grey-line);
   display: none;
 }
 
 .trust-strip__text {
   font-size: var(--font-size-xs);
   font-weight: 600;
-  color: var(--color-black);
+  color: var(--color-grey);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   white-space: nowrap;

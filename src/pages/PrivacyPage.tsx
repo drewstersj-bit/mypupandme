@@ -13,7 +13,7 @@ export default function PrivacyPage() {
         <section className="section">
           <div className="container container--narrow">
             <h1>Privacy Policy</h1>
-            <p style={{ marginBottom: '2rem' }}>Last updated: December 2024</p>
+            <p style={{ marginBottom: '2rem', color: '#999' }}>Last updated: December 2024</p>
 
             <h2>Who We Are</h2>
             <p>My Pup and Me is operated by the team behind My Chi and Me. This policy explains how we handle your personal information when you use our website.</p>
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
             <p>This website uses minimal cookies necessary for site functionality. We do not use tracking cookies or third-party advertising cookies.</p>
 
             <h2>Contact</h2>
-            <p>If you have questions about your data or this policy, please <a href="/contact" style={{ color: 'var(--color-red)' }}>get in touch</a>.</p>
+            <p>If you have questions about your data or this policy, please <a href="/contact" style={{ color: '#F20D19' }}>get in touch</a>.</p>
           </div>
         </section>
       </main>

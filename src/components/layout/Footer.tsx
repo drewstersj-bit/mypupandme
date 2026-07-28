@@ -7,13 +7,13 @@ export default function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div>
-            <svg className="footer__brand-logo" viewBox="0 0 180 32" width="150" height="28" aria-label="My Pup and Me">
-              <text x="2" y="26" fontFamily="'Brush Script MT', cursive" fontSize="21" fill="#FFFFFF" fontStyle="italic">my</text>
-              <text x="32" y="27" fontFamily="'Brush Script MT', cursive" fontSize="28" fontWeight="700" fill="#FFFFFF" fontStyle="italic">Pup</text>
-              <text x="82" y="26" fontFamily="'Inter', sans-serif" fontSize="9" fill="#FFFFFF" letterSpacing="0.5">and</text>
-              <text x="105" y="26" fontFamily="'Inter', sans-serif" fontSize="18" fontWeight="700" fill="#FFFFFF">me</text>
-              <path d="M96 3c-1.2 0-2.2.7-2.6.9-.4-.2-1.4-.9-2.6-.9-2.2 0-4 2.1-4 4.5 0 4.2 6.6 8.5 6.6 8.5s6.6-4.3 6.6-8.5c0-2.4-1.8-4.5-4-4.5z" fill="#F20D19"/>
-            </svg>
+            <img
+              src="/assets/logo-on-black.png"
+              alt="My Pup and Me"
+              className="footer__brand-logo"
+              width="140"
+              height="35"
+            />
             <p className="footer__brand-summary">
               Stylish harnesses and matching leads for puppies, toy breeds and small dogs.
             </p>

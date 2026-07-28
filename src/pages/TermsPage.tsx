@@ -13,7 +13,7 @@ export default function TermsPage() {
         <section className="section">
           <div className="container container--narrow">
             <h1>Terms &amp; Conditions</h1>
-            <p style={{ marginBottom: '2rem' }}>Last updated: December 2024</p>
+            <p style={{ marginBottom: '2rem', color: '#999' }}>Last updated: December 2024</p>
 
             <h2>About This Website</h2>
             <p>My Pup and Me (mypupandme.co.uk) is a brand website operated by the team behind My Chi and Me. Product purchases are completed through the My Chi and Me Shopify store.</p>
@@ -31,7 +31,7 @@ export default function TermsPage() {
             <p>All content on this website including images, text, logos and design is the property of My Pup and Me and may not be reproduced without permission.</p>
 
             <h2>Contact</h2>
-            <p>For questions about these terms, please <a href="/contact" style={{ color: 'var(--color-red)' }}>contact us</a>.</p>
+            <p>For questions about these terms, please <a href="/contact" style={{ color: '#F20D19' }}>contact us</a>.</p>
           </div>
         </section>
       </main>

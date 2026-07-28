@@ -11,7 +11,7 @@
 .our-story-page__lead {
   font-size: var(--font-size-md);
   line-height: 1.7;
-  color: var(--color-grey-dark);
+  color: var(--color-grey);
   margin-bottom: var(--space-xl);
 }
 
@@ -22,22 +22,26 @@
 
 .our-story-page__image-placeholder {
   aspect-ratio: 16/9;
-  background: linear-gradient(135deg, var(--color-grey-light) 0%, #D4D4D0 100%);
+  background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
   border-radius: var(--radius);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: var(--space-xl) 0;
-  color: var(--color-grey);
+  color: var(--color-grey-dim);
   font-size: var(--font-size-sm);
 }
 
 .our-story-page__note {
-  background-color: var(--color-white);
+  background-color: var(--color-black-card);
   padding: var(--space-lg);
   border-radius: var(--radius);
   margin-top: var(--space-2xl);
-  border: 1px solid var(--color-grey-light);
+  border: 1px solid var(--color-grey-line);
+}
+
+.our-story-page__note p {
+  color: var(--color-grey);
 }
 
 .our-story-page__note a {

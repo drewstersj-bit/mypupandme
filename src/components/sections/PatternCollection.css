@@ -1,5 +1,6 @@
 .pattern-collection {
-  background-color: var(--color-white);
+  background-color: var(--color-black-light);
+  border-top: 1px solid var(--color-grey-line);
 }
 
 .pattern-collection__header {
@@ -19,24 +20,24 @@
 
 .pattern-collection__tab {
   padding: 0.5rem 1rem;
-  border: 1.5px solid var(--color-grey-light);
+  border: 1.5px solid var(--color-grey-line);
   border-radius: var(--radius);
   font-size: var(--font-size-sm);
   font-weight: 500;
   color: var(--color-grey);
-  background: var(--color-white);
+  background: transparent;
   transition: all var(--transition-fast);
 }
 
 .pattern-collection__tab:hover {
-  border-color: var(--color-black);
-  color: var(--color-black);
+  border-color: var(--color-white);
+  color: var(--color-white);
 }
 
 .pattern-collection__tab--active {
   border-color: var(--color-red);
   color: var(--color-red);
-  background-color: var(--color-blush);
+  background-color: rgba(242, 13, 25, 0.08);
 }
 
 .pattern-collection__display {
@@ -50,7 +51,7 @@
   aspect-ratio: 1;
   max-width: 420px;
   border-radius: var(--radius);
-  background: linear-gradient(155deg, #E9E9E6 0%, #D4D4D0 100%);
+  background: linear-gradient(155deg, #1A1A1A 0%, #2A2A2A 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,12 +60,13 @@
 .pattern-collection__image-fallback span {
   font-size: var(--font-size-sm);
   font-weight: 600;
-  color: var(--color-grey);
+  color: var(--color-grey-dim);
 }
 
 .pattern-collection__info h3 {
   font-family: var(--font-heading);
   margin-bottom: var(--space-sm);
+  color: var(--color-white);
 }
 
 .pattern-collection__info p {
@@ -75,7 +77,7 @@
 .pattern-collection__price {
   font-size: var(--font-size-xl);
   font-weight: 700;
-  color: var(--color-black) !important;
+  color: var(--color-white) !important;
   margin-bottom: var(--space-lg) !important;
 }
 

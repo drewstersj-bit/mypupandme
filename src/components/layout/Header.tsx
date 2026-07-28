@@ -21,13 +21,13 @@ export default function Header() {
     <header className="header" role="banner">
       <div className="header__inner container">
         <Link to="/" className="header__logo" aria-label="My Pup and Me — Home" onClick={closeMenu}>
-          <svg className="header__logo-img" viewBox="0 0 220 40" aria-hidden="true" width="180" height="36">
-            <text x="2" y="32" fontFamily="'Brush Script MT', cursive" fontSize="26" fill="#0B0B0B" fontStyle="italic">my</text>
-            <text x="38" y="33" fontFamily="'Brush Script MT', cursive" fontSize="34" fontWeight="700" fill="#0B0B0B" fontStyle="italic">Pup</text>
-            <text x="98" y="32" fontFamily="'Inter', sans-serif" fontSize="11" fill="#0B0B0B" letterSpacing="0.5">and</text>
-            <text x="127" y="32" fontFamily="'Inter', sans-serif" fontSize="22" fontWeight="700" fill="#0B0B0B">me</text>
-            <path d="M116 4c-1.5 0-2.8.9-3.2 1.1-.4-.2-1.7-1.1-3.2-1.1-2.8 0-5 2.6-5 5.5 0 5.2 8.2 10.5 8.2 10.5s8.2-5.3 8.2-10.5c0-2.9-2.2-5.5-5-5.5z" fill="#F20D19"/>
-          </svg>
+          <img
+            src="/assets/logo-on-black.png"
+            alt="My Pup and Me"
+            className="header__logo-img"
+            width="160"
+            height="40"
+          />
         </Link>
 
         <nav className="header__nav" aria-label="Main navigation">

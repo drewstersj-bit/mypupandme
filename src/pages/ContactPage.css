@@ -23,16 +23,18 @@
 .contact-page__field label {
   font-weight: 600;
   font-size: var(--font-size-sm);
+  color: var(--color-white);
 }
 
 .contact-page__field input,
 .contact-page__field textarea {
   padding: 0.7rem var(--space-md);
-  border: 1.5px solid var(--color-grey-light);
+  border: 1.5px solid var(--color-grey-line);
   border-radius: var(--radius);
   font-family: var(--font-body);
   font-size: var(--font-size-base);
-  color: var(--color-black);
+  color: var(--color-white);
+  background-color: var(--color-black-card);
   transition: border-color var(--transition-fast);
 }
 
@@ -44,11 +46,11 @@
 
 .contact-page__success {
   padding: var(--space-lg);
-  background-color: var(--color-blush);
+  background-color: rgba(242, 13, 25, 0.08);
   border-radius: var(--radius);
   border: 1px solid rgba(242, 13, 25, 0.2);
 }
 
 .contact-page__success p {
-  color: var(--color-black);
+  color: var(--color-white);
 }

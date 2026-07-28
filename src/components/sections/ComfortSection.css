@@ -1,5 +1,5 @@
 .comfort-section {
-  background-color: var(--color-bg);
+  background-color: var(--color-black);
 }
 
 .comfort-section__grid {
@@ -18,7 +18,7 @@
 .comfort-section__img-fallback {
   aspect-ratio: 4/3;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, #E9E9E6 0%, #D4D4D0 100%);
+  background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
 
 .comfort-section__img-fallback span {
   font-size: var(--font-size-sm);
-  color: var(--color-grey);
+  color: var(--color-grey-dim);
   text-align: center;
 }
 
@@ -43,7 +43,7 @@
   gap: var(--space-sm);
   font-size: var(--font-size-sm);
   font-weight: 500;
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 .comfort-section__dot {
@@ -73,7 +73,7 @@
   padding: var(--space-sm) var(--space-md);
   text-align: left;
   font-size: var(--font-size-sm);
-  border-bottom: 1px solid var(--color-grey-light);
+  border-bottom: 1px solid var(--color-grey-line);
 }
 
 .comfort-section__table th {
@@ -81,17 +81,18 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--color-grey);
+  color: var(--color-grey-dim);
 }
 
 .comfort-section__table td {
-  color: var(--color-grey-dark);
+  color: var(--color-grey);
 }
 
 .comfort-section__tip {
   font-size: var(--font-size-sm);
   font-style: italic;
   margin-bottom: var(--space-lg);
+  color: var(--color-grey-dim);
 }
 
 @media (min-width: 768px) {

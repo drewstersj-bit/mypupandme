@@ -1,19 +1,20 @@
 /* ============================================
-   MY PUP AND ME — Design System 2.0
-   Contemporary / Fashion-led / Black-White-Red
+   MY PUP AND ME — Dark Theme
+   Black dominant / White text / Red accent
    ============================================ */
 
 :root {
-  /* Colours — derived from logo */
+  /* Colours */
   --color-black: #0B0B0B;
+  --color-black-light: #151515;
+  --color-black-card: #1A1A1A;
   --color-white: #FFFFFF;
   --color-red: #F20D19;
   --color-red-hover: #D90B15;
-  --color-bg: #F7F7F5;
+  --color-grey: #999999;
+  --color-grey-dim: #666666;
+  --color-grey-line: #2A2A2A;
   --color-grey-light: #E9E9E6;
-  --color-grey: #737373;
-  --color-grey-dark: #404040;
-  --color-blush: #F7E9EA;
 
   /* Typography */
   --font-heading: 'Sora', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -75,8 +76,8 @@ body {
   font-family: var(--font-body);
   font-size: var(--font-size-base);
   line-height: 1.6;
-  color: var(--color-black);
-  background-color: var(--color-bg);
+  color: var(--color-white);
+  background-color: var(--color-black);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -106,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.15;
-  color: var(--color-black);
+  color: var(--color-white);
   letter-spacing: -0.02em;
 }
 
@@ -134,7 +135,7 @@ p:last-child { margin-bottom: 0; }
   top: -40px;
   left: 0;
   padding: var(--space-sm) var(--space-md);
-  background: var(--color-black);
+  background: var(--color-red);
   color: var(--color-white);
   z-index: 10000;
   font-size: var(--font-size-sm);

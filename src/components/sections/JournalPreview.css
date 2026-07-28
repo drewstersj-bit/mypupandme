@@ -1,5 +1,6 @@
 .journal-preview {
-  background-color: var(--color-white);
+  background-color: var(--color-black-light);
+  border-top: 1px solid var(--color-grey-line);
 }
 
 .journal-preview__header {
@@ -20,7 +21,7 @@
 
 .journal-card__image {
   aspect-ratio: 16/9;
-  background: linear-gradient(135deg, var(--color-grey-light) 0%, #D4D4D0 100%);
+  background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
   border-radius: var(--radius);
   overflow: hidden;
   margin-bottom: var(--space-md);
@@ -31,7 +32,7 @@
 
 .journal-card__image-placeholder {
   font-size: var(--font-size-xs);
-  color: var(--color-grey);
+  color: var(--color-grey-dim);
   padding: var(--space-md);
   text-align: center;
 }
@@ -50,6 +51,7 @@
   font-size: var(--font-size-base);
   font-weight: 600;
   margin-bottom: var(--space-sm);
+  color: var(--color-white);
   transition: color var(--transition-fast);
 }
 
@@ -60,7 +62,7 @@
 .journal-card__read {
   font-size: var(--font-size-sm);
   font-weight: 600;
-  color: var(--color-black);
+  color: var(--color-grey);
 }
 
 @media (min-width: 768px) {

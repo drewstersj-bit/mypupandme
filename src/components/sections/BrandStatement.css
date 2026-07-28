@@ -1,5 +1,7 @@
 .brand-statement {
-  background-color: var(--color-white);
+  background-color: var(--color-black-light);
+  border-top: 1px solid var(--color-grey-line);
+  border-bottom: 1px solid var(--color-grey-line);
 }
 
 .brand-statement__grid {
@@ -34,17 +36,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #E9E9E6 0%, #D4D4D0 100%);
+  background: linear-gradient(135deg, #1A1A1A 0%, #252525 100%);
   padding: var(--space-md);
 }
 
 .brand-statement__img-fallback--dark {
-  background: linear-gradient(135deg, #D4D4D0 0%, #C0C0BC 100%);
+  background: linear-gradient(135deg, #252525 0%, #333 100%);
 }
 
 .brand-statement__img-fallback span {
   font-size: var(--font-size-xs);
-  color: var(--color-grey);
+  color: var(--color-grey-dim);
   text-align: center;
   line-height: 1.5;
 }
