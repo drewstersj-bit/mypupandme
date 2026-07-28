@@ -1,0 +1,119 @@
+.size-guide-page h1 {
+  margin-bottom: var(--space-lg);
+}
+
+.size-guide-page h2 {
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-lg);
+}
+
+.size-guide-page__intro {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.size-guide-page__table-wrap {
+  overflow-x: auto;
+  margin: var(--space-xl) 0;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+}
+
+.size-guide-page__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.size-guide-page__table th,
+.size-guide-page__table td {
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-cream);
+  text-align: left;
+}
+
+.size-guide-page__table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+  color: var(--color-charcoal);
+}
+
+.size-guide-page__table td {
+  font-size: var(--font-size-base);
+  color: var(--color-warm-grey);
+}
+
+.size-guide-page__instructions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+.size-guide-page__step {
+  background-color: var(--color-white);
+  padding: var(--space-xl);
+  border-radius: var(--border-radius);
+}
+
+.size-guide-page__step h3 {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.size-guide-page__tip {
+  background-color: rgba(167, 176, 154, 0.15);
+  border-left: 3px solid var(--color-sage);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius);
+  margin: var(--space-2xl) 0;
+}
+
+.size-guide-page__tip p {
+  color: var(--color-charcoal);
+  margin: 0;
+}
+
+.size-guide-page__illustration {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-xl) 0;
+}
+
+.size-guide-page__breeds {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.size-guide-page__breeds > div {
+  background-color: var(--color-white);
+  padding: var(--space-xl);
+  border-radius: var(--border-radius);
+}
+
+.size-guide-page__breeds h3 {
+  font-family: var(--font-body);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  color: var(--color-red);
+}
+
+.size-guide-page__cta {
+  text-align: center;
+  margin-top: var(--space-3xl);
+}
+
+@media (min-width: 768px) {
+  .size-guide-page__instructions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .size-guide-page__breeds {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

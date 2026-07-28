@@ -1,0 +1,72 @@
+import { useEffect } from 'react'
+
+interface SEOHeadProps {
+  title: string
+  description: string
+  canonical?: string
+  ogImage?: string
+  article?: boolean
+}
+
+const SITE_URL = 'https://mypupandme.co.uk'
+const SITE_NAME = 'My Pup and Me'
+const DEFAULT_OG_IMAGE = '/assets/og-image.jpg'
+
+function setMeta(name: string, content: string, property = false) {
+  const attr = property ? 'property' : 'name'
+  let el = document.querySelector(`meta[${attr}="${name}"]`)
+  if (!el) {
+    el = document.createElement('meta')
+    el.setAttribute(attr, name)
+    document.head.appendChild(el)
+  }
+  el.setAttribute('content', content)
+}
+
+function setLink(rel: string, href: string) {
+  let el = document.querySelector(`link[rel="${rel}"]`) as HTMLLinkElement | null
+  if (!el) {
+    el = document.createElement('link')
+    el.setAttribute('rel', rel)
+    document.head.appendChild(el)
+  }
+  el.setAttribute('href', href)
+}
+
+export default function SEOHead({
+  title,
+  description,
+  canonical,
+  ogImage,
+  article = false,
+}: SEOHeadProps) {
+  const fullTitle = title === 'Home'
+    ? `${SITE_NAME} — Beautifully Designed for Little Dogs`
+    : `${title} | ${SITE_NAME}`
+
+  const url = canonical ? `${SITE_URL}${canonical}` : SITE_URL
+  const image = `${SITE_URL}${ogImage || DEFAULT_OG_IMAGE}`
+
+  useEffect(() => {
+    document.title = fullTitle
+    setMeta('description', description)
+    setLink('canonical', url)
+
+    // Open Graph
+    setMeta('og:type', article ? 'article' : 'website', true)
+    setMeta('og:title', fullTitle, true)
+    setMeta('og:description', description, true)
+    setMeta('og:url', url, true)
+    setMeta('og:image', image, true)
+    setMeta('og:site_name', SITE_NAME, true)
+    setMeta('og:locale', 'en_GB', true)
+
+    // Twitter
+    setMeta('twitter:card', 'summary_large_image')
+    setMeta('twitter:title', fullTitle)
+    setMeta('twitter:description', description)
+    setMeta('twitter:image', image)
+  }, [fullTitle, description, url, image, article])
+
+  return null
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mypupandme.co.uk/sitemap.xml

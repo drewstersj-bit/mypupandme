@@ -1,0 +1,54 @@
+.contact-page h1 {
+  margin-bottom: var(--space-md);
+}
+
+.contact-page__intro {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--space-3xl);
+}
+
+.contact-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  max-width: 500px;
+}
+
+.contact-page__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.contact-page__field label {
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+
+.contact-page__field input,
+.contact-page__field textarea {
+  padding: var(--space-md);
+  border: 1px solid var(--color-stone);
+  border-radius: var(--border-radius);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  color: var(--color-charcoal);
+  transition: border-color var(--transition-fast);
+}
+
+.contact-page__field input:focus,
+.contact-page__field textarea:focus {
+  border-color: var(--color-red);
+  outline: none;
+}
+
+.contact-page__success {
+  padding: var(--space-xl);
+  background-color: rgba(167, 176, 154, 0.15);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-sage);
+}
+
+.contact-page__success p {
+  color: var(--color-charcoal);
+}

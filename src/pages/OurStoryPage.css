@@ -1,0 +1,54 @@
+.our-story-page h1 {
+  margin-bottom: var(--space-2xl);
+}
+
+.our-story-page__content h2 {
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-lg);
+  font-size: var(--font-size-2xl);
+}
+
+.our-story-page__lead {
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-2xl);
+}
+
+.our-story-page__content p {
+  font-size: var(--font-size-md);
+  line-height: 1.8;
+}
+
+.our-story-page__image-placeholder {
+  aspect-ratio: 16/9;
+  background-color: var(--color-cream);
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--space-2xl) 0;
+  color: var(--color-warm-grey);
+  font-size: var(--font-size-sm);
+}
+
+.our-story-page__note {
+  background-color: var(--color-cream);
+  padding: var(--space-xl);
+  border-radius: var(--border-radius);
+  margin-top: var(--space-3xl);
+}
+
+.our-story-page__note a {
+  color: var(--color-red);
+  font-weight: 600;
+}
+
+.our-story-page__note a:hover {
+  text-decoration: underline;
+}
+
+.our-story-page__cta {
+  text-align: center;
+  margin-top: var(--space-3xl);
+}

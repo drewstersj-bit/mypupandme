@@ -1,0 +1,33 @@
+.article-page__breadcrumb {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-2xl);
+  color: var(--color-warm-grey);
+}
+
+.article-page__breadcrumb a {
+  color: var(--color-warm-grey);
+  transition: color var(--transition-fast);
+}
+
+.article-page__breadcrumb a:hover {
+  color: var(--color-red);
+}
+
+.article-page h1 {
+  margin-bottom: var(--space-2xl);
+}
+
+.article-page__body p {
+  font-size: var(--font-size-md);
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+}
+
+.article-page__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-cream);
+}
