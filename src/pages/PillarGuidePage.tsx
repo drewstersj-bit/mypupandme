@@ -42,13 +42,13 @@ export default function PillarGuidePage() {
 
             <div className="article-layout__body">
               <p>
-                Choosing the right harness for a small dog means understanding that puppies, toy breeds and miniature dogs have genuinely different needs from larger breeds. A harness that works well on a Labrador will not work on a Chihuahua — even in a smaller size. This guide covers everything from measuring and fitting to materials, styles and common mistakes.
+                Choosing the right harness for a small dog means understanding that puppies, toy breeds and miniature dogs have genuinely different needs from larger breeds. A harness that works well on a Labrador will not work on a Chihuahua - even in a smaller size. This guide covers everything from measuring and fitting to materials, styles and common mistakes.
               </p>
 
               <div className="summary-box">
                 <h3>Quick summary</h3>
                 <ul>
-                  <li>Measure your dog's chest and neck before ordering — breed alone does not determine size</li>
+                  <li>Measure your dog's chest and neck before ordering - breed alone does not determine size</li>
                   <li>Small dogs benefit from lightweight harnesses with soft padding and compact hardware</li>
                   <li>Overhead harnesses are typically easier to put on wriggly small dogs</li>
                   <li>Remeasure puppies every 2–4 weeks during growth</li>
@@ -58,7 +58,7 @@ export default function PillarGuidePage() {
 
               <h2>Why fit matters for little dogs</h2>
               <p>
-                A poorly fitting harness on a small dog is more than uncomfortable — it can restrict breathing, rub bare skin and make walks stressful. Small dogs have less body mass to absorb pressure from straps, so every millimetre of adjustment matters more than it does on a larger breed.
+                A poorly fitting harness on a small dog is more than uncomfortable - it can restrict breathing, rub bare skin and make walks stressful. Small dogs have less body mass to absorb pressure from straps, so every millimetre of adjustment matters more than it does on a larger breed.
               </p>
               <p>
                 Dogs under 5 kg are particularly sensitive to harness weight. A heavy buckle or thick strap that a 20 kg dog wouldn't notice can feel burdensome on a 2 kg Chihuahua or Papillon.
@@ -99,7 +99,7 @@ export default function PillarGuidePage() {
 
               <h2>Choosing between sizes</h2>
               <p>
-                If your dog's chest measurement falls between two sizes, choose the larger one. All My Pup and Me harnesses have an adjustable strap to tighten the fit. Starting slightly larger gives room for comfortable adjustment and — for puppies — a little growth before the next size is needed.
+                If your dog's chest measurement falls between two sizes, choose the larger one. All My Pup and Me harnesses have an adjustable strap to tighten the fit. Starting slightly larger gives room for comfortable adjustment and - for puppies - a little growth before the next size is needed.
               </p>
               <p>
                 See our guide on <Link to="/journal/when-to-resize-a-puppy-harness">when to resize a puppy harness</Link> for growth remeasuring advice.
@@ -118,7 +118,7 @@ export default function PillarGuidePage() {
                 The best harnesses for very small dogs use lightweight components: silky webbing straps rather than thick nylon, anodised aluminium hardware rather than steel, and compact buckles that don't add unnecessary bulk.
               </p>
               <p>
-                A breathable mesh lining against the chest helps with temperature regulation — important for small dogs who can overheat more easily than larger breeds.
+                A breathable mesh lining against the chest helps with temperature regulation - important for small dogs who can overheat more easily than larger breeds.
               </p>
 
               <h2>Matching leads</h2>
@@ -128,11 +128,11 @@ export default function PillarGuidePage() {
 
               <h2>Common fitting mistakes</h2>
               <ul>
-                <li><strong>Choosing by breed alone</strong> — individual dogs vary significantly. Always measure.</li>
-                <li><strong>Buying too large "to grow into"</strong> — a loose harness can slip and rub. Choose the correct size now and remeasure as needed.</li>
-                <li><strong>Tightening too much</strong> — you should be able to slide one flat finger beneath each strap.</li>
-                <li><strong>Not checking after exercise</strong> — straps can shift during play. Check the fit after the first few walks.</li>
-                <li><strong>Ignoring the neck</strong> — most attention goes to chest size, but neck comfort matters too.</li>
+                <li><strong>Choosing by breed alone</strong> - individual dogs vary significantly. Always measure.</li>
+                <li><strong>Buying too large "to grow into"</strong> - a loose harness can slip and rub. Choose the correct size now and remeasure as needed.</li>
+                <li><strong>Tightening too much</strong> - you should be able to slide one flat finger beneath each strap.</li>
+                <li><strong>Not checking after exercise</strong> - straps can shift during play. Check the fit after the first few walks.</li>
+                <li><strong>Ignoring the neck</strong> - most attention goes to chest size, but neck comfort matters too.</li>
               </ul>
 
               <h2>When to remeasure</h2>

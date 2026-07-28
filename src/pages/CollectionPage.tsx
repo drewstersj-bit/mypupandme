@@ -20,7 +20,7 @@ export default function CollectionPage() {
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'My Pup and Me — Full Collection',
+    name: 'My Pup and Me Full Collection',
     numberOfItems: products.filter((p) => p.status === 'active').length,
     itemListElement: products
       .filter((p) => p.status === 'active')

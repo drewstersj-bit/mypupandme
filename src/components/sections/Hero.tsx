@@ -7,8 +7,8 @@ export default function Hero() {
     <section className="hero" aria-labelledby="hero-heading">
       <div className="hero__image-bg">
         <img
-          src="/assets/lifestyle/Meadow_Floral_Izzy_5_800x800.jpg"
-          alt="Small dog wearing a My Pup and Me Blue Meadow Floral harness"
+          src="/assets/lifestyle/Tweed_Zac_3_800x800.jpg"
+          alt="Small dog wearing a My Pup and Me Classic Tweed harness outdoors"
           className="hero__bg-img"
           width="800"
           height="800"
@@ -27,7 +27,7 @@ export default function Hero() {
             Little harnesses.<br />Big personality.
           </h1>
           <p className="hero__subheading">
-            Lightweight, comfortable harnesses created for puppies, toy breeds and very small dogs—with distinctive prints and matching leads.
+            Lightweight, comfortable harnesses created for puppies, toy breeds and very small dogs - with distinctive prints and matching leads.
           </p>
           <div className="hero__ctas">
             <a

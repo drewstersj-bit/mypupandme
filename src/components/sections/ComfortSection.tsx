@@ -52,7 +52,7 @@ export default function ComfortSection() {
                 ))}
               </tbody>
             </table>
-            <p className="comfort-section__tip">Between sizes? Go up for growing puppies. Breed references are guidance only—measurements determine the correct fit.</p>
+            <p className="comfort-section__tip">Between sizes? Go up for growing puppies. Breed references are guidance only - measurements determine the correct fit.</p>
             <Button to="/size-guide" variant="outline" size="md">
               Measure your dog in two minutes
             </Button>

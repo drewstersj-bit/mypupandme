@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="header" role="banner">
       <div className="header__inner container">
-        <Link to="/" className="header__logo" aria-label="My Pup and Me — Home" onClick={closeMenu}>
+        <Link to="/" className="header__logo" aria-label="My Pup and Me - Home" onClick={closeMenu}>
           <img
             src="/onblack.jpg"
             alt="My Pup and Me"

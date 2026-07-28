@@ -10,7 +10,7 @@ import './ArticlePage.css'
 function HowToMeasure() {
   return (
     <>
-      <p>Accurate chest and neck measurements are the only reliable way to choose the right harness size for a small dog. Breed guidelines give a starting point, but individual dogs vary — even within the same breed — so a tape measure is essential.</p>
+      <p>Accurate chest and neck measurements are the only reliable way to choose the right harness size for a small dog. Breed guidelines give a starting point, but individual dogs vary - even within the same breed - so a tape measure is essential.</p>
       <div className="summary-box">
         <h3>What you need</h3>
         <ul>
@@ -21,7 +21,7 @@ function HowToMeasure() {
       </div>
       <h2>Step-by-step measuring guide</h2>
       <ol>
-        <li><strong>Chest measurement:</strong> Wrap the tape around the widest part of your dog's ribcage, just behind the front legs. Keep the tape snug but not tight — you should be able to slide one flat finger beneath it.</li>
+        <li><strong>Chest measurement:</strong> Wrap the tape around the widest part of your dog's ribcage, just behind the front legs. Keep the tape snug but not tight - you should be able to slide one flat finger beneath it.</li>
         <li><strong>Neck measurement:</strong> Measure around the base of the neck, where a collar naturally sits. Leave room for one finger.</li>
         <li><strong>Record both numbers</strong> in centimetres and compare them to the size chart.</li>
       </ol>
@@ -35,7 +35,7 @@ function HowToMeasure() {
       <p>If your dog's chest falls between two sizes, choose the larger one. The adjustable strap will allow you to tighten the fit.</p>
       <h2>Common measuring mistakes</h2>
       <ul>
-        <li>Measuring with the tape too loose — this gives a falsely large reading</li>
+        <li>Measuring with the tape too loose - this gives a falsely large reading</li>
         <li>Measuring over a thick coat without pressing gently to the body</li>
         <li>Measuring while the dog is sitting or lying down</li>
         <li>Assuming a breed-based guess is accurate enough</li>
@@ -62,9 +62,9 @@ function BestHarnessChihuahua() {
         </ul>
       </div>
       <h2>Why standard small-dog harnesses often don't work</h2>
-      <p>Many brands offer "XS" as their smallest size, but an XS designed for a Pug or Jack Russell will swamp a Chihuahua. The proportions are wrong — straps sit too wide apart, chest panels cover too much of the body, and heavy buckles pull downward.</p>
+      <p>Many brands offer "XS" as their smallest size, but an XS designed for a Pug or Jack Russell will swamp a Chihuahua. The proportions are wrong - straps sit too wide apart, chest panels cover too much of the body, and heavy buckles pull downward.</p>
       <h2>What size does a Chihuahua need?</h2>
-      <p>Most adult Chihuahuas measure 20–30 cm around the chest. This typically puts them in an XXS or XS harness. However, you must measure your individual dog — a 1.5 kg Chihuahua and a 3.5 kg Chihuahua are very different animals.</p>
+      <p>Most adult Chihuahuas measure 20–30 cm around the chest. This typically puts them in an XXS or XS harness. However, you must measure your individual dog - a 1.5 kg Chihuahua and a 3.5 kg Chihuahua are very different animals.</p>
       <p>For measuring instructions, read our <Link to="/journal/how-to-measure-a-small-dog-for-a-harness">measuring guide</Link>.</p>
       <h2>Comfort features that matter</h2>
       <ul>
@@ -83,7 +83,7 @@ function BestHarnessChihuahua() {
 function HowShouldPuppyHarnessFit() {
   return (
     <>
-      <p>A properly fitting puppy harness should be snug against the body without restricting movement or breathing. You should be able to slide one flat finger beneath each strap — no more, no less. If you can fit two fingers easily, it's too loose and may slip. If you can't fit a finger, it's too tight.</p>
+      <p>A properly fitting puppy harness should be snug against the body without restricting movement or breathing. You should be able to slide one flat finger beneath each strap - no more, no less. If you can fit two fingers easily, it's too loose and may slip. If you can't fit a finger, it's too tight.</p>
       <div className="summary-box">
         <h3>Quick fit check</h3>
         <ul>
@@ -146,7 +146,7 @@ function XXSSizeGuide() {
         </tbody>
       </table>
       <h2>Between XXS and XS?</h2>
-      <p>If your dog's chest measures 24–26 cm — right at the boundary — choose XS. The adjustable strap allows you to tighten it down, whereas an XXS at maximum extension may not leave room for comfortable movement.</p>
+      <p>If your dog's chest measures 24–26 cm - right at the boundary - choose XS. The adjustable strap allows you to tighten it down, whereas an XXS at maximum extension may not leave room for comfortable movement.</p>
       <p>For puppies approaching this boundary, going up also allows a few more weeks of wear before the next size is needed. See our guide on <Link to="/journal/when-to-resize-a-puppy-harness">when to resize a puppy harness</Link>.</p>
     </>
   )
@@ -155,13 +155,13 @@ function XXSSizeGuide() {
 function StepInVsOverhead() {
   return (
     <>
-      <p>Overhead harnesses slip over the dog's head and fasten at the side or beneath the chest. Step-in harnesses require the dog to place both front paws through loops before buckling on the back. For most small dogs, the overhead style is quicker and easier — especially for wriggly puppies and dogs who dislike having their paws handled.</p>
+      <p>Overhead harnesses slip over the dog's head and fasten at the side or beneath the chest. Step-in harnesses require the dog to place both front paws through loops before buckling on the back. For most small dogs, the overhead style is quicker and easier - especially for wriggly puppies and dogs who dislike having their paws handled.</p>
       <div className="summary-box">
         <h3>Comparison at a glance</h3>
         <table>
           <thead><tr><th>Feature</th><th>Overhead</th><th>Step-In</th></tr></thead>
           <tbody>
-            <tr><td>Ease of use</td><td>Quick — one motion</td><td>Requires dog to stand still</td></tr>
+            <tr><td>Ease of use</td><td>Quick - one motion</td><td>Requires dog to stand still</td></tr>
             <tr><td>Best for</td><td>Wriggly dogs, puppies</td><td>Calm dogs, sensitive heads</td></tr>
             <tr><td>Escape risk</td><td>Low if fitted well</td><td>Can slip if loose</td></tr>
             <tr><td>Adjustment</td><td>Usually adjustable chest strap</td><td>Varies</td></tr>
@@ -172,7 +172,7 @@ function StepInVsOverhead() {
       <p>The head goes through a fixed loop, then the harness fastens around the chest with a buckle. The lead attaches to a D-ring on the back. This style keeps the front legs free and doesn't require any paw lifting.</p>
       <p>My Pup and Me uses the overhead style with a fully adjustable silky webbing strap and a secure branded buckle at the side.</p>
       <h2>Step-in harnesses explained</h2>
-      <p>Both front paws step into separate loops laid flat on the ground, then the harness pulls up around the body and clips on the back. This avoids anything going over the head — which some dogs find stressful — but requires the dog to stand still on all four legs while you lift and fasten.</p>
+      <p>Both front paws step into separate loops laid flat on the ground, then the harness pulls up around the body and clips on the back. This avoids anything going over the head - which some dogs find stressful - but requires the dog to stand still on all four legs while you lift and fasten.</p>
       <h2>Which is better for small dogs?</h2>
       <p>Neither style is universally "better." However, overhead harnesses tend to work more practically for:</p>
       <ul>
@@ -189,7 +189,7 @@ function StepInVsOverhead() {
 function BestHarnessToyBreed() {
   return (
     <>
-      <p>Toy breeds need harnesses built for their proportions — not simply scaled-down versions of products designed for medium-sized dogs. The key differences are weight, strap width, buckle size and chest panel coverage. A genuinely good toy-breed harness feels barely noticeable to wear.</p>
+      <p>Toy breeds need harnesses built for their proportions - not simply scaled-down versions of products designed for medium-sized dogs. The key differences are weight, strap width, buckle size and chest panel coverage. A genuinely good toy-breed harness feels barely noticeable to wear.</p>
       <div className="summary-box">
         <h3>What matters most</h3>
         <ul>
@@ -252,7 +252,7 @@ function WhenToResize() {
       <h2>Using the adjustable strap</h2>
       <p>A well-designed harness with an adjustable strap gives you several centimetres of range within one size. Start with the strap at a mid-point so you can loosen it as the puppy grows, extending the usable life of each harness.</p>
       <h2>When to buy the next size</h2>
-      <p>Order the next size up when the current harness is at maximum extension <em>and</em> fitting snugly. Don't wait until it's visibly tight — by that point it's already uncomfortable.</p>
+      <p>Order the next size up when the current harness is at maximum extension <em>and</em> fitting snugly. Don't wait until it's visibly tight - by that point it's already uncomfortable.</p>
       <p>For measuring instructions, see <Link to="/journal/how-to-measure-a-small-dog-for-a-harness">how to measure a small dog for a harness</Link>. For size boundary guidance, see the <Link to="/journal/xxs-dog-harness-size-guide">XXS size guide</Link>.</p>
     </>
   )
@@ -261,7 +261,7 @@ function WhenToResize() {
 function HowToMatchHarnessAndLead() {
   return (
     <>
-      <p>A matching harness and lead set creates a polished, intentional look and ensures that lead hardware is proportionate to the harness — important for small dogs where oversized clips can pull at the D-ring uncomfortably.</p>
+      <p>A matching harness and lead set creates a polished, intentional look and ensures that lead hardware is proportionate to the harness - important for small dogs where oversized clips can pull at the D-ring uncomfortably.</p>
       <div className="summary-box">
         <h3>Benefits of a matched set</h3>
         <ul>
@@ -296,17 +296,17 @@ function ChoosingPuppyHarness() {
       <div className="summary-box">
         <h3>Puppy harness priorities</h3>
         <ul>
-          <li>Lightweight — under 50 g for toy breed puppies</li>
-          <li>Padded chest panel — gentle on a puppy's soft body</li>
-          <li>Adjustable strap — accommodates several weeks of growth</li>
-          <li>Quick to put on — overhead styles are usually fastest</li>
-          <li>Breathable lining — puppies overheat easily during excited walks</li>
+          <li>Lightweight - under 50 g for toy breed puppies</li>
+          <li>Padded chest panel - gentle on a puppy's soft body</li>
+          <li>Adjustable strap - accommodates several weeks of growth</li>
+          <li>Quick to put on - overhead styles are usually fastest</li>
+          <li>Breathable lining - puppies overheat easily during excited walks</li>
         </ul>
       </div>
       <h2>When to introduce a harness</h2>
       <p>Most puppies can start wearing a harness at home from around 8 weeks. Let them wear it indoors for short periods before attaching a lead. This builds positive association before the first outdoor walk.</p>
       <h2>Weight and materials</h2>
-      <p>Puppies are sensitive to anything that feels restrictive. A heavy harness can make a puppy freeze, refuse to walk or try to escape. Look for harnesses described as lightweight and check that buckles and clips are proportionate — not designed for a much larger dog.</p>
+      <p>Puppies are sensitive to anything that feels restrictive. A heavy harness can make a puppy freeze, refuse to walk or try to escape. Look for harnesses described as lightweight and check that buckles and clips are proportionate - not designed for a much larger dog.</p>
       <h2>Adjustability for growth</h2>
       <p>A puppy can outgrow a harness in 2–4 weeks during rapid growth phases. A harness with an adjustable ribcage strap gives you more time in each size. Check the fit regularly using the one-finger rule described in our <Link to="/journal/how-should-a-puppy-harness-fit">fitting guide</Link>.</p>
       <h2>Fabric and lining</h2>

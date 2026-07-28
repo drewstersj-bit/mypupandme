@@ -70,7 +70,7 @@ function checkRoute(route: string) {
     issues.push({ severity: 'error', route, message: 'Missing <title> tag' })
   } else {
     const title = titleMatch[1]
-    if (title === 'My Pup and Me — Beautifully Designed for Little Dogs' && route !== '/') {
+    if (title === 'My Pup and Me - Beautifully Designed for Little Dogs' && route !== '/') {
       issues.push({ severity: 'error', route, message: `Title appears to be generic/default: "${title}"` })
     }
     if (title.length > 70) {

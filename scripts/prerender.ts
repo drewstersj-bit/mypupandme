@@ -97,7 +97,7 @@ const pages: PageMeta[] = [
   },
   {
     path: '/our-story',
-    title: 'Harnesses Designed for Little Dogs — Our Story | My Pup and Me',
+    title: 'Harnesses Designed for Little Dogs | My Pup and Me',
     description: 'Why we created My Pup and Me: lightweight, properly proportioned harnesses for puppies, toy breeds and very small dogs who deserve more than scaled-down accessories.',
     h1: 'Our Story',
     canonical: '/our-story',

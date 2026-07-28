@@ -43,7 +43,7 @@ export default function EmailSignup() {
             <path d="M10 18s-7-4.5-7-10.5C3 4.5 5.5 2 8.5 2c1.5 0 2.7.8 3 1.2.3-.4 1.5-1.2 3-1.2C17.5 2 20 4.5 20 7.5 20 13.5 10 18 10 18z" fill="#ff0090" transform="translate(-3,-1) scale(0.9)"/>
           </svg>
           <h2 id="signup-heading">Join the little-dog club.</h2>
-          <p>New prints, useful advice and first looks—straight to your inbox.</p>
+          <p>New prints, useful advice and first looks - straight to your inbox.</p>
 
           {submitted ? (
             <div className="email-signup__success" role="alert">

@@ -4,7 +4,7 @@ import './BannerCarousel.css'
 const banners = [
   {
     src: '/assets/banners/my_pup_and_me_banner.jpg',
-    alt: 'My Pup and Me — harnesses designed for little dogs',
+    alt: 'My Pup and Me - harnesses designed for little dogs',
   },
   {
     src: '/assets/banners/royal_mail.jpg',

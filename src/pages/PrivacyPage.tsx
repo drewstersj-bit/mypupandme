@@ -19,7 +19,7 @@ export default function PrivacyPage() {
             <p>My Pup and Me is operated by the team behind My Chi and Me. This policy explains how we handle your personal information when you use our website.</p>
 
             <h2>Information We Collect</h2>
-            <p>When you sign up for our newsletter or use our contact form, we collect your name and email address. We do not collect payment information on this website—all purchases are processed through our Shopify store.</p>
+            <p>When you sign up for our newsletter or use our contact form, we collect your name and email address. We do not collect payment information on this website - all purchases are processed through our Shopify store.</p>
 
             <h2>How We Use Your Information</h2>
             <p>We use your email address to send you updates about new products, new patterns and useful advice for small-dog owners. We will not share your information with third parties for marketing purposes.</p>

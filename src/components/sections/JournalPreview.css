@@ -17,24 +17,23 @@
   display: block;
   text-decoration: none;
   color: inherit;
-}
-
-.journal-card__image {
-  aspect-ratio: 16/9;
-  background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-grey-line);
   border-radius: var(--radius);
-  overflow: hidden;
-  margin-bottom: var(--space-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: border-color var(--transition-fast);
 }
 
-.journal-card__image-placeholder {
-  font-size: var(--font-size-xs);
+.journal-card:hover {
+  border-color: var(--color-red);
+}
+
+.journal-card__icon-wrap {
+  margin-bottom: var(--space-md);
   color: var(--color-grey-dim);
-  padding: var(--space-md);
-  text-align: center;
+}
+
+.journal-card__icon {
+  display: block;
 }
 
 .journal-card__label {
