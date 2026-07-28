@@ -2,6 +2,7 @@ import SEOHead from '@/components/seo/SEOHead'
 import { OrganizationSchema, WebSiteSchema, BrandSchema } from '@/components/seo/StructuredData'
 import StructuredData from '@/components/seo/StructuredData'
 import Hero from '@/components/sections/Hero'
+import BannerCarousel from '@/components/sections/BannerCarousel'
 import TrustStrip from '@/components/sections/TrustStrip'
 import FeaturedCollection from '@/components/sections/FeaturedCollection'
 import BrandStatement from '@/components/sections/BrandStatement'
@@ -54,6 +55,7 @@ export default function HomePage() {
 
       <main id="main-content">
         <Hero />
+        <BannerCarousel />
         <TrustStrip />
         <FeaturedCollection />
         <BrandStatement />
