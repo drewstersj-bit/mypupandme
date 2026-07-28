@@ -5,6 +5,16 @@ import './Hero.css'
 export default function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-heading">
+      <div className="hero__image-bg">
+        <img
+          src="/assets/lifestyle/Meadow_Floral_Izzy_5_800x800.jpg"
+          alt="Small dog wearing a My Pup and Me Blue Meadow Floral harness"
+          className="hero__bg-img"
+          width="800"
+          height="800"
+        />
+        <div className="hero__overlay" />
+      </div>
       <div className="hero__container container">
         <div className="hero__content">
           <span className="hero__eyebrow">
@@ -17,7 +27,7 @@ export default function Hero() {
             Little harnesses.<br />Big personality.
           </h1>
           <p className="hero__subheading">
-            Lightweight, comfortable harnesses created for puppies, toy breeds and very small dogs—with distinctive prints and matching leads for beautifully coordinated walks.
+            Lightweight, comfortable harnesses created for puppies, toy breeds and very small dogs—with distinctive prints and matching leads.
           </p>
           <div className="hero__ctas">
             <a
@@ -34,17 +44,7 @@ export default function Hero() {
               Find Their Size
             </Button>
           </div>
-          <p className="hero__cta-note">You'll be taken to our sister website to complete your purchase securely.</p>
           <p className="hero__trust-line">Available in XXS–S • UK small-dog specialists • Matching leads available</p>
-        </div>
-        <div className="hero__image-wrap">
-          <img
-            src="/assets/lifestyle/Meadow_Floral_Izzy_5_800x800.jpg"
-            alt="Small dog wearing a My Pup and Me Blue Meadow Floral harness"
-            className="hero__image"
-            width="800"
-            height="800"
-          />
         </div>
       </div>
     </section>
