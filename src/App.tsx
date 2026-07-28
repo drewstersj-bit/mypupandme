@@ -2,7 +2,9 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import AnnouncementBar from '@/components/layout/AnnouncementBar'
 import Header from '@/components/layout/Header'
+import ShopBar from '@/components/layout/ShopBar'
 import Footer from '@/components/layout/Footer'
+import StickyMobileCTA from '@/components/ui/StickyMobileCTA'
 import HomePage from '@/pages/HomePage'
 import CollectionPage from '@/pages/CollectionPage'
 import SizeGuidePage from '@/pages/SizeGuidePage'
@@ -31,6 +33,7 @@ export default function App() {
       <ScrollToTop />
       <AnnouncementBar />
       <Header />
+      <ShopBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/collection" element={<CollectionPage />} />
@@ -44,6 +47,7 @@ export default function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
+      <StickyMobileCTA />
     </>
   )
 }

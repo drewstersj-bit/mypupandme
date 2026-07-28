@@ -98,3 +98,18 @@
   font-size: var(--font-size-xs);
   color: var(--color-grey-dim);
 }
+
+.product-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-red);
+  margin-top: var(--space-sm);
+  transition: opacity var(--transition-fast);
+}
+
+.product-card__link:hover .product-card__cta {
+  opacity: 0.75;
+}

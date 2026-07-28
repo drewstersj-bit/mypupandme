@@ -9,6 +9,7 @@ import ComfortSection from '@/components/sections/ComfortSection'
 import PatternCollection from '@/components/sections/PatternCollection'
 import Community from '@/components/sections/Community'
 import JournalPreview from '@/components/sections/JournalPreview'
+import PurchaseReassurance from '@/components/sections/PurchaseReassurance'
 import EmailSignup from '@/components/sections/EmailSignup'
 import { getFeaturedHarnesses } from '@/data/products'
 
@@ -43,7 +44,7 @@ export default function HomePage() {
     <>
       <SEOHead
         title="Home"
-        description="Beautifully designed, lightweight harnesses and matching leads for puppies, toy breeds and small dogs. Available in four stunning patterns from XXS to Small."
+        description="Lightweight harnesses and matching leads designed for puppies, toy breeds and very small dogs. Four distinctive prints, sizes XXS to S. Shop at My Chi and Me."
         canonical="/"
       />
       <OrganizationSchema />
@@ -59,6 +60,7 @@ export default function HomePage() {
         <PatternCollection />
         <Community />
         <JournalPreview />
+        <PurchaseReassurance />
         <EmailSignup />
       </main>
     </>

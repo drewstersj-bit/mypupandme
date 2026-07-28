@@ -1,0 +1,46 @@
+.shop-bar {
+  background-color: var(--color-black-card);
+  border-bottom: 1px solid var(--color-grey-line);
+  padding: 0.6rem 0;
+}
+
+.shop-bar__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: center;
+  text-align: center;
+}
+
+.shop-bar__text {
+  font-size: var(--font-size-xs);
+  color: var(--color-grey);
+  margin: 0;
+}
+
+.shop-bar__text strong {
+  color: var(--color-white);
+}
+
+.shop-bar__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-red);
+  transition: opacity var(--transition-fast);
+}
+
+.shop-bar__btn:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .shop-bar__inner {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-lg);
+    text-align: left;
+  }
+}

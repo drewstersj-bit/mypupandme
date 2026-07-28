@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { trackOutboundClick, SHOP_URL } from '@/utils/tracking'
 import './Header.css'
 
 const navLinks = [
   { to: '/', label: 'Home' },
-  { to: '/collection', label: 'Shop' },
+  { to: '/collection', label: 'Shop the Collection' },
   { to: '/size-guide', label: 'Size Guide' },
   { to: '/our-story', label: 'Our Story' },
   { to: '/journal', label: 'Journal' },
@@ -47,21 +48,15 @@ export default function Header() {
 
         <div className="header__actions">
           <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header__social-link"
-            aria-label="Follow us on Instagram"
+            href={SHOP_URL}
+            className="header__cta btn btn--primary btn--sm"
+            onClick={() => trackOutboundClick({ button_location: 'header_cta', destination_url: SHOP_URL })}
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-              <circle cx="12" cy="12" r="5"/>
-              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            Buy at My Chi and Me
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+              <path d="M2 10L10 2M10 2H4M10 2v6"/>
             </svg>
           </a>
-          <Link to="/collection" className="header__cta btn btn--primary btn--sm">
-            Shop Now
-          </Link>
           <button
             className="header__menu-toggle"
             onClick={toggleMenu}
@@ -98,14 +93,14 @@ export default function Header() {
               </li>
             ))}
             <li>
-              <Link
-                to="/collection"
+              <a
+                href={SHOP_URL}
                 className="btn btn--primary btn--lg mobile-menu__cta"
-                onClick={closeMenu}
+                onClick={() => { closeMenu(); trackOutboundClick({ button_location: 'mobile_menu_cta', destination_url: SHOP_URL }); }}
                 tabIndex={menuOpen ? 0 : -1}
               >
-                Shop Now
-              </Link>
+                Buy at My Chi and Me
+              </a>
             </li>
           </ul>
         </nav>

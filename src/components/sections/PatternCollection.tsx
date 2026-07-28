@@ -47,11 +47,9 @@ export default function PatternCollection() {
                 <p className="pattern-collection__price">£{harness.price.toFixed(2)}</p>
                 <a
                   href={harness.shopUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="btn btn--primary btn--md"
                 >
-                  Shop This Design
+                  Buy at My Chi and Me
                 </a>
               </div>
             </>

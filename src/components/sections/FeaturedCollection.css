@@ -26,6 +26,17 @@
   text-align: center;
 }
 
+.featured-collection__footer {
+  margin-top: var(--space-2xl);
+  text-align: center;
+}
+
+.featured-collection__note {
+  font-size: var(--font-size-xs);
+  color: var(--color-grey-dim);
+  margin-bottom: var(--space-md);
+}
+
 @media (min-width: 768px) {
   .featured-collection__grid {
     grid-template-columns: repeat(4, 1fr);

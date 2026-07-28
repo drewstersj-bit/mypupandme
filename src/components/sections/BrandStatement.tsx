@@ -18,9 +18,9 @@ export default function BrandStatement() {
             </div>
           </div>
           <div className="brand-statement__content">
-            <h2 id="brand-heading">Designed around little dogs.</h2>
+            <h2 id="brand-heading">Properly proportioned for little dogs.</h2>
             <p>
-              Because the smallest dogs deserve more than scaled-down accessories. Our harnesses combine lightweight comfort, adjustable proportions and prints with real personality.
+              Small dogs are not simply smaller versions of large dogs. Their harnesses need thoughtful proportions, lightweight materials and comfortable adjustment. My Pup and Me was created to give puppies, toy breeds and little dogs a better choice—without losing any of the personality.
             </p>
           </div>
         </div>

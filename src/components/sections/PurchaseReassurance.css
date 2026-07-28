@@ -1,0 +1,41 @@
+.purchase-reassurance {
+  background-color: var(--color-black-card);
+  border-top: 1px solid var(--color-grey-line);
+  border-bottom: 1px solid var(--color-grey-line);
+}
+
+.purchase-reassurance__inner {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.purchase-reassurance h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.purchase-reassurance__intro {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.purchase-reassurance__points {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.purchase-reassurance__point {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-grey);
+}
+
+.purchase-reassurance__check {
+  color: var(--color-red);
+  flex-shrink: 0;
+}

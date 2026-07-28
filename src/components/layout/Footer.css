@@ -22,7 +22,22 @@
   color: var(--color-grey-dim);
   font-size: var(--font-size-sm);
   line-height: 1.6;
-  max-width: 280px;
+  max-width: 320px;
+  margin-bottom: var(--space-md);
+}
+
+.footer__shop-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-red);
+  transition: opacity var(--transition-fast);
+}
+
+.footer__shop-link:hover {
+  opacity: 0.8;
 }
 
 .footer__heading {

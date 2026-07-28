@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { trackOutboundClick, SHOP_URL } from '@/utils/tracking'
 import './Footer.css'
 
 export default function Footer() {
@@ -15,8 +16,18 @@ export default function Footer() {
               height="35"
             />
             <p className="footer__brand-summary">
-              Stylish harnesses and matching leads for puppies, toy breeds and small dogs.
+              My Pup and Me is the small-dog harness and accessories brand from the team behind My Chi and Me. Products are currently available to purchase exclusively at mychiandme.co.uk.
             </p>
+            <a
+              href={SHOP_URL}
+              className="footer__shop-link"
+              onClick={() => trackOutboundClick({ button_location: 'footer', destination_url: SHOP_URL })}
+            >
+              Shop at My Chi and Me
+              <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M2 10L10 2M10 2H4M10 2v6"/>
+              </svg>
+            </a>
           </div>
 
           <div>
@@ -50,9 +61,6 @@ export default function Footer() {
           <div>
             <p className="footer__copyright">
               &copy; {new Date().getFullYear()} My Pup and Me
-            </p>
-            <p className="footer__parent-note">
-              Brought to you by the team behind My Chi and Me.
             </p>
           </div>
 

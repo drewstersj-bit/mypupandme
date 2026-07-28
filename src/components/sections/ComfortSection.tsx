@@ -27,8 +27,8 @@ export default function ComfortSection() {
             </div>
           </div>
           <div className="comfort-section__sizing">
-            <h2 id="comfort-heading">Fit and comfort.</h2>
-            <p>Sized from XXS for the smallest dogs. Measure your pup's chest and neck to find the right fit.</p>
+            <h2 id="comfort-heading">A comfortable fit starts with the right size.</h2>
+            <p>Measure around the widest part of your dog's chest before ordering. Our harnesses are available in XXS, XS and S, making them suitable for many puppies, Chihuahuas and toy breeds.</p>
             <table className="comfort-section__table" aria-label="Harness sizes">
               <thead>
                 <tr>
@@ -47,9 +47,9 @@ export default function ComfortSection() {
                 ))}
               </tbody>
             </table>
-            <p className="comfort-section__tip">Between sizes? Go up for growing puppies.</p>
+            <p className="comfort-section__tip">Between sizes? Go up for growing puppies. Breed references are guidance only—measurements determine the correct fit.</p>
             <Button to="/size-guide" variant="outline" size="md">
-              View Size Guide
+              Measure your dog in two minutes
             </Button>
           </div>
         </div>

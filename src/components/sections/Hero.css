@@ -64,6 +64,19 @@
   color: var(--color-grey-dim);
 }
 
+.hero__cta-note {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-xs);
+  color: var(--color-grey-dim);
+}
+
+.hero__trust-line {
+  margin-top: var(--space-md);
+  font-size: var(--font-size-xs);
+  color: var(--color-grey);
+  letter-spacing: 0.02em;
+}
+
 .hero__image-wrap {
   position: relative;
   min-height: 320px;
