@@ -25,7 +25,8 @@ export default function ContactPage() {
           <div className="container container--narrow">
             <h1>Contact Us</h1>
             <p className="contact-page__intro">
-              Have a question about sizing, patterns or anything else? We'd love to hear from you.
+              Have a question about sizing, patterns or anything else? Drop us a message below or email us directly at{' '}
+              <a href="mailto:info@mychiandme.co.uk" style={{ color: '#ff0090' }}>info@mychiandme.co.uk</a>
             </p>
 
             {submitted ? (

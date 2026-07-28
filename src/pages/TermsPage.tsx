@@ -31,7 +31,7 @@ export default function TermsPage() {
             <p>All content on this website including images, text, logos and design is the property of My Pup and Me and may not be reproduced without permission.</p>
 
             <h2>Contact</h2>
-            <p>For questions about these terms, please <a href="/contact" style={{ color: '#E63946' }}>contact us</a>.</p>
+            <p>For questions about these terms, please email <a href="mailto:info@mychiandme.co.uk" style={{ color: '#ff0090' }}>info@mychiandme.co.uk</a>.</p>
           </div>
         </section>
       </main>
