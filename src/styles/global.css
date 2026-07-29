@@ -10,15 +10,15 @@
   /* Brand Palette */
   --color-berry: #7B2948;
   --color-berry-hover: #63213A;
-  --color-blush: #E8B8C5;
+  --color-blush: #F2D4DC;
   --color-coral: #E87868;
   --color-coral-hover: #D46355;
-  --color-ivory: #FAF7F2;
-  --color-stone: #EEE8E1;
-  --color-charcoal: #292526;
+  --color-ivory: #FBF8F5;
+  --color-stone: #F3ECE8;
+  --color-charcoal: #2A1F24;
   --color-white: #FFFFFF;
-  --color-grey: #6B6366;
-  --color-grey-light: #D9D3CE;
+  --color-grey: #6B5560;
+  --color-grey-light: #E4D8DC;
 
   /* Typography */
   --font-main: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
