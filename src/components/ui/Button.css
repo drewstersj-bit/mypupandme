@@ -3,61 +3,67 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
-  font-family: var(--font-body);
+  font-family: var(--font-main);
   font-weight: 600;
   text-decoration: none;
-  border-radius: var(--radius);
-  transition: all var(--transition-fast);
+  border-radius: var(--radius-btn);
+  transition: all var(--transition-base);
   white-space: nowrap;
   cursor: pointer;
   border: 2px solid transparent;
-  letter-spacing: -0.01em;
 }
 
 .btn--primary {
-  background-color: var(--color-red);
+  background-color: var(--color-berry);
   color: var(--color-white);
-  border-color: var(--color-red);
+  border-color: var(--color-berry);
 }
 
 .btn--primary:hover {
-  background-color: var(--color-red-hover);
-  border-color: var(--color-red-hover);
+  background-color: var(--color-berry-hover);
+  border-color: var(--color-berry-hover);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-1px);
 }
 
 .btn--secondary {
   background-color: var(--color-white);
-  color: var(--color-black);
-  border-color: var(--color-white);
+  color: var(--color-charcoal);
+  border-color: var(--color-grey-light);
 }
 
 .btn--secondary:hover {
-  background-color: var(--color-grey-light);
-  border-color: var(--color-grey-light);
+  border-color: var(--color-berry);
+  color: var(--color-berry);
 }
 
 .btn--outline {
   background-color: transparent;
-  color: var(--color-white);
-  border-color: var(--color-grey-dim);
+  color: var(--color-berry);
+  border-color: var(--color-berry);
 }
 
 .btn--outline:hover {
-  border-color: var(--color-white);
+  background-color: var(--color-berry);
   color: var(--color-white);
+  transform: translateY(-1px);
 }
 
 .btn--sm {
-  padding: 0.4rem 0.9rem;
+  padding: 0.45rem 1rem;
   font-size: var(--font-size-xs);
 }
 
 .btn--md {
-  padding: 0.65rem 1.4rem;
+  padding: 0.7rem 1.5rem;
   font-size: var(--font-size-sm);
 }
 
 .btn--lg {
-  padding: 0.85rem 1.8rem;
+  padding: 0.9rem 2rem;
   font-size: var(--font-size-base);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn:hover { transform: none; }
 }

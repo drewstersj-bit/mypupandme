@@ -15,10 +15,10 @@
 .size-guide-page__table-wrap {
   overflow-x: auto;
   margin: var(--space-lg) 0;
-  background-color: var(--color-black-card);
+  background-color: var(--color-white);
   border-radius: var(--radius);
   padding: var(--space-md);
-  border: 1px solid var(--color-grey-line);
+  border: 1px solid var(--color-grey-light);
 }
 
 .size-guide-page__table {
@@ -29,7 +29,7 @@
 .size-guide-page__table th,
 .size-guide-page__table td {
   padding: var(--space-sm) var(--space-md);
-  border-bottom: 1px solid var(--color-grey-line);
+  border-bottom: 1px solid var(--color-grey-light);
   text-align: left;
 }
 
@@ -38,7 +38,7 @@
   text-transform: uppercase;
   font-size: var(--font-size-xs);
   letter-spacing: 0.06em;
-  color: var(--color-grey-dim);
+  color: var(--color-grey);
 }
 
 .size-guide-page__table td {
@@ -53,30 +53,30 @@
 }
 
 .size-guide-page__step {
-  background-color: var(--color-black-card);
+  background-color: var(--color-white);
   padding: var(--space-lg);
   border-radius: var(--radius);
-  border: 1px solid var(--color-grey-line);
+  border: 1px solid var(--color-grey-light);
 }
 
 .size-guide-page__step h3 {
-  font-family: var(--font-body);
+  font-family: var(--font-main);
   font-size: var(--font-size-base);
   font-weight: 600;
   margin-bottom: var(--space-sm);
-  color: var(--color-white);
+  color: var(--color-charcoal);
 }
 
 .size-guide-page__tip {
-  background-color: rgba(242, 13, 25, 0.06);
-  border-left: 3px solid var(--color-red);
+  background-color: var(--color-blush);
+  border-left: 3px solid var(--color-berry);
   padding: var(--space-lg);
-  border-radius: var(--radius);
+  border-radius: var(--radius-btn);
   margin: var(--space-2xl) 0;
 }
 
 .size-guide-page__tip p {
-  color: var(--color-white);
+  color: var(--color-charcoal);
   margin: 0;
 }
 
@@ -93,18 +93,18 @@
 }
 
 .size-guide-page__breeds > div {
-  background-color: var(--color-black-card);
+  background-color: var(--color-white);
   padding: var(--space-lg);
   border-radius: var(--radius);
-  border: 1px solid var(--color-grey-line);
+  border: 1px solid var(--color-grey-light);
 }
 
 .size-guide-page__breeds h3 {
-  font-family: var(--font-heading);
+  font-family: var(--font-main);
   font-size: var(--font-size-lg);
   font-weight: 700;
   margin-bottom: var(--space-xs);
-  color: var(--color-red);
+  color: var(--color-berry);
 }
 
 .size-guide-page__cta {

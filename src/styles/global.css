@@ -1,24 +1,27 @@
 /* ============================================
-   MY PUP AND ME — Dark Theme
-   Black dominant / White text / Red accent
+   MY PUP AND ME — Design System 3.0
+   Contemporary / Premium / Fashion-led
+   Deep Berry · Soft Blush · Warm Coral · Ivory
    ============================================ */
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
 :root {
-  /* Colours */
-  --color-black: #0B0B0B;
-  --color-black-light: #151515;
-  --color-black-card: #1A1A1A;
+  /* Brand Palette */
+  --color-berry: #7B2948;
+  --color-berry-hover: #63213A;
+  --color-blush: #E8B8C5;
+  --color-coral: #E87868;
+  --color-coral-hover: #D46355;
+  --color-ivory: #FAF7F2;
+  --color-stone: #EEE8E1;
+  --color-charcoal: #292526;
   --color-white: #FFFFFF;
-  --color-red: #ff0090;
-  --color-red-hover: #e6007f;
-  --color-grey: #999999;
-  --color-grey-dim: #666666;
-  --color-grey-line: #2A2A2A;
-  --color-grey-light: #E9E9E6;
+  --color-grey: #6B6366;
+  --color-grey-light: #D9D3CE;
 
   /* Typography */
-  --font-heading: 'Sora', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-main: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-size-xs: 0.6875rem;
   --font-size-sm: 0.8125rem;
   --font-size-base: 1rem;
@@ -42,13 +45,18 @@
   /* Layout */
   --max-width: 1320px;
   --max-width-narrow: 720px;
-  --radius: 6px;
-  --radius-lg: 10px;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-btn: 8px;
 
   /* Transitions */
   --transition-fast: 150ms ease;
-  --transition-base: 200ms ease;
-  --transition-slow: 350ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Shadows */
+  --shadow-card: 0 2px 12px rgba(41, 37, 38, 0.04);
+  --shadow-hover: 0 8px 24px rgba(41, 37, 38, 0.08);
 }
 
 /* Reset */
@@ -73,11 +81,12 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-main);
   font-size: var(--font-size-base);
-  line-height: 1.6;
-  color: var(--color-white);
-  background-color: var(--color-black);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-charcoal);
+  background-color: var(--color-ivory);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -104,10 +113,10 @@ button {
 ul, ol { list-style: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+  font-family: var(--font-main);
   font-weight: 700;
-  line-height: 1.15;
-  color: var(--color-white);
+  line-height: 1.2;
+  color: var(--color-charcoal);
   letter-spacing: -0.02em;
 }
 
@@ -135,17 +144,19 @@ p:last-child { margin-bottom: 0; }
   top: -40px;
   left: 0;
   padding: var(--space-sm) var(--space-md);
-  background: var(--color-red);
+  background: var(--color-berry);
   color: var(--color-white);
   z-index: 10000;
   font-size: var(--font-size-sm);
+  font-weight: 600;
+  border-radius: 0 0 var(--radius-btn) 0;
   transition: top var(--transition-fast);
 }
 .skip-link:focus { top: 0; }
 
 /* Focus */
 :focus-visible {
-  outline: 2px solid var(--color-red);
+  outline: 2px solid var(--color-berry);
   outline-offset: 2px;
 }
 
@@ -185,19 +196,3 @@ p:last-child { margin-bottom: 0; }
   border: 0;
 }
 
-/* Fonts */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url('https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSdSnn-KIwNhBti0.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300 700;
-  font-display: swap;
-  src: url('https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2') format('woff2');
-}

@@ -13,9 +13,9 @@
   gap: var(--space-lg);
   margin-bottom: var(--space-lg);
   padding: var(--space-md) var(--space-lg);
-  background-color: var(--color-black-card);
+  background-color: var(--color-white);
   border-radius: var(--radius);
-  border: 1px solid var(--color-grey-line);
+  border: 1px solid var(--color-grey-light);
 }
 
 .collection-page__filter-group {
@@ -29,23 +29,23 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--color-grey-dim);
+  color: var(--color-grey);
 }
 
 .collection-page__select {
   padding: var(--space-sm) var(--space-md);
-  border: 1px solid var(--color-grey-line);
-  border-radius: var(--radius);
-  font-family: var(--font-body);
+  border: 2px solid var(--color-grey-light);
+  border-radius: var(--radius-btn);
+  font-family: var(--font-main);
   font-size: var(--font-size-sm);
-  color: var(--color-white);
-  background-color: var(--color-black);
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
   min-width: 160px;
 }
 
 .collection-page__count {
   font-size: var(--font-size-sm);
-  color: var(--color-grey-dim);
+  color: var(--color-grey);
   margin-bottom: var(--space-lg);
 }
 

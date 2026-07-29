@@ -31,7 +31,7 @@ export default function PrivacyPage() {
             <p>This website uses minimal cookies necessary for site functionality. We do not use tracking cookies or third-party advertising cookies.</p>
 
             <h2>Contact</h2>
-            <p>If you have questions about your data or this policy, please email <a href="mailto:info@mychiandme.co.uk" style={{ color: '#ff0090' }}>info@mychiandme.co.uk</a>.</p>
+            <p>If you have questions about your data or this policy, please email <a href="mailto:info@mychiandme.co.uk" style={{ color: '#7B2948' }}>info@mychiandme.co.uk</a>.</p>
           </div>
         </section>
       </main>

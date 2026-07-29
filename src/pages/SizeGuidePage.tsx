@@ -73,8 +73,8 @@ export default function SizeGuidePage() {
               <svg viewBox="0 0 300 200" width="300" height="200" aria-label="Illustration showing measurement points on a small dog" role="img">
                 <ellipse cx="150" cy="130" rx="70" ry="40" fill="none" stroke="#737373" strokeWidth="1.5"/>
                 <ellipse cx="110" cy="80" rx="35" ry="28" fill="none" stroke="#737373" strokeWidth="1.5"/>
-                <path d="M135 100c15 8 20 25 20 30" fill="none" stroke="#ff0090" strokeWidth="2.5" strokeDasharray="6 3"/>
-                <ellipse cx="150" cy="130" rx="70" ry="40" fill="none" stroke="#ff0090" strokeWidth="2.5" strokeDasharray="6 3"/>
+                <path d="M135 100c15 8 20 25 20 30" fill="none" stroke="#7B2948" strokeWidth="2.5" strokeDasharray="6 3"/>
+                <ellipse cx="150" cy="130" rx="70" ry="40" fill="none" stroke="#7B2948" strokeWidth="2.5" strokeDasharray="6 3"/>
                 <text x="230" y="130" fontSize="12" fill="#999999" fontFamily="Inter, sans-serif">Chest</text>
                 <text x="55" y="70" fontSize="12" fill="#999999" fontFamily="Inter, sans-serif">Neck</text>
               </svg>

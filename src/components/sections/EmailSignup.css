@@ -1,7 +1,6 @@
 .email-signup {
-  background-color: var(--color-black-card);
+  background-color: var(--color-berry);
   padding: var(--space-3xl) 0;
-  border-top: 1px solid var(--color-grey-line);
 }
 
 .email-signup__inner {
@@ -20,7 +19,7 @@
 }
 
 .email-signup__inner > p {
-  color: var(--color-grey-dim);
+  color: rgba(255, 255, 255, 0.75);
   font-size: var(--font-size-sm);
   margin-bottom: var(--space-xl);
 }
@@ -38,52 +37,52 @@
 }
 
 .email-signup__input {
-  padding: 0.7rem 1rem;
-  border: 1.5px solid var(--color-grey-line);
-  border-radius: var(--radius);
-  background-color: rgba(255, 255, 255, 0.04);
+  padding: 0.75rem 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-btn);
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--color-white);
   font-size: var(--font-size-base);
-  font-family: var(--font-body);
+  font-family: var(--font-main);
   transition: border-color var(--transition-fast);
 }
 
 .email-signup__input::placeholder {
-  color: var(--color-grey-dim);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .email-signup__input:focus {
-  border-color: var(--color-red);
+  border-color: var(--color-white);
   outline: none;
 }
 
 .email-signup__input--error {
-  border-color: var(--color-red);
+  border-color: var(--color-coral);
 }
 
 .email-signup__error {
   font-size: var(--font-size-xs);
-  color: var(--color-red);
+  color: var(--color-blush);
   text-align: left;
 }
 
 .email-signup__consent {
   font-size: var(--font-size-xs);
-  color: var(--color-grey-dim);
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
   line-height: 1.5;
 }
 
 .email-signup__consent a {
-  color: var(--color-grey);
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: underline;
 }
 
 .email-signup__success {
   padding: var(--space-lg);
-  background-color: rgba(242, 13, 25, 0.08);
-  border-radius: var(--radius);
-  border: 1px solid rgba(242, 13, 25, 0.3);
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .email-signup__success p {
@@ -97,7 +96,5 @@
     gap: var(--space-sm);
   }
 
-  .email-signup__input {
-    flex: 1;
-  }
+  .email-signup__input { flex: 1; }
 }

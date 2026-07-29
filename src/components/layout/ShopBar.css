@@ -1,7 +1,6 @@
 .shop-bar {
-  background-color: var(--color-black-card);
-  border-bottom: 1px solid var(--color-grey-line);
-  padding: 0.6rem 0;
+  background-color: var(--color-blush);
+  padding: 0.55rem 0;
 }
 
 .shop-bar__inner {
@@ -14,12 +13,13 @@
 
 .shop-bar__text {
   font-size: var(--font-size-xs);
-  color: var(--color-grey);
+  color: var(--color-charcoal);
   margin: 0;
 }
 
 .shop-bar__text strong {
-  color: var(--color-white);
+  font-weight: 700;
+  color: var(--color-berry);
 }
 
 .shop-bar__btn {
@@ -27,14 +27,12 @@
   align-items: center;
   gap: 0.3rem;
   font-size: var(--font-size-xs);
-  font-weight: 600;
-  color: var(--color-red);
+  font-weight: 700;
+  color: var(--color-berry);
   transition: opacity var(--transition-fast);
 }
 
-.shop-bar__btn:hover {
-  opacity: 0.8;
-}
+.shop-bar__btn:hover { opacity: 0.7; }
 
 @media (min-width: 768px) {
   .shop-bar__inner {

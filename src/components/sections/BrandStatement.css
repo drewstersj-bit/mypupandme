@@ -1,7 +1,5 @@
 .brand-statement {
-  background-color: var(--color-black-light);
-  border-top: 1px solid var(--color-grey-line);
-  border-bottom: 1px solid var(--color-grey-line);
+  background-color: var(--color-stone);
 }
 
 .brand-statement__grid {
@@ -28,13 +26,8 @@
   object-fit: cover;
 }
 
-.brand-statement__img--main {
-  aspect-ratio: 3/4;
-}
-
-.brand-statement__img--detail {
-  aspect-ratio: 2/3;
-}
+.brand-statement__img--main { aspect-ratio: 3/4; }
+.brand-statement__img--detail { aspect-ratio: 2/3; }
 
 .brand-statement__content h2 {
   margin-bottom: var(--space-md);
@@ -42,7 +35,7 @@
 
 .brand-statement__content p {
   font-size: var(--font-size-md);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 @media (min-width: 768px) {

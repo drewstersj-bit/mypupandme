@@ -22,22 +22,22 @@
 
 .our-story-page__image-placeholder {
   aspect-ratio: 16/9;
-  background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+  background: var(--color-stone);
   border-radius: var(--radius);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: var(--space-xl) 0;
-  color: var(--color-grey-dim);
+  color: var(--color-grey);
   font-size: var(--font-size-sm);
 }
 
 .our-story-page__note {
-  background-color: var(--color-black-card);
+  background-color: var(--color-white);
   padding: var(--space-lg);
   border-radius: var(--radius);
   margin-top: var(--space-2xl);
-  border: 1px solid var(--color-grey-line);
+  border: 1px solid var(--color-grey-light);
 }
 
 .our-story-page__note p {
@@ -45,7 +45,7 @@
 }
 
 .our-story-page__note a {
-  color: var(--color-red);
+  color: var(--color-berry);
   font-weight: 600;
 }
 

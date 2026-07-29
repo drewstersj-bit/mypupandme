@@ -1,7 +1,7 @@
 .article-page__breadcrumb {
   font-size: var(--font-size-sm);
   margin-bottom: var(--space-xl);
-  color: var(--color-grey-dim);
+  color: var(--color-grey);
 }
 
 .article-page__breadcrumb a {
@@ -10,7 +10,7 @@
 }
 
 .article-page__breadcrumb a:hover {
-  color: var(--color-red);
+  color: var(--color-berry);
 }
 
 .article-page h1 {
@@ -29,5 +29,5 @@
   gap: var(--space-md);
   margin-top: var(--space-2xl);
   padding-top: var(--space-xl);
-  border-top: 1px solid var(--color-grey-line);
+  border-top: 1px solid var(--color-grey-light);
 }

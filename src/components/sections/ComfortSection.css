@@ -1,5 +1,5 @@
 .comfort-section {
-  background-color: var(--color-black);
+  background-color: var(--color-ivory);
 }
 
 .comfort-section__grid {
@@ -20,6 +20,7 @@
   aspect-ratio: 4/3;
   border-radius: var(--radius);
   object-fit: cover;
+  box-shadow: var(--shadow-card);
 }
 
 .comfort-section__features {
@@ -33,15 +34,15 @@
   align-items: center;
   gap: var(--space-sm);
   font-size: var(--font-size-sm);
-  font-weight: 500;
-  color: var(--color-white);
+  font-weight: 600;
+  color: var(--color-charcoal);
 }
 
 .comfort-section__dot {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background-color: var(--color-red);
+  background-color: var(--color-berry);
   flex-shrink: 0;
 }
 
@@ -57,6 +58,10 @@
   width: 100%;
   border-collapse: collapse;
   margin-bottom: var(--space-lg);
+  background-color: var(--color-white);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 
 .comfort-section__table th,
@@ -64,26 +69,27 @@
   padding: var(--space-sm) var(--space-md);
   text-align: left;
   font-size: var(--font-size-sm);
-  border-bottom: 1px solid var(--color-grey-line);
+  border-bottom: 1px solid var(--color-stone);
 }
 
 .comfort-section__table th {
   font-size: var(--font-size-xs);
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--color-grey-dim);
+  color: var(--color-grey);
+  background-color: var(--color-stone);
 }
 
 .comfort-section__table td {
-  color: var(--color-grey);
+  color: var(--color-charcoal);
 }
 
 .comfort-section__tip {
   font-size: var(--font-size-sm);
   font-style: italic;
   margin-bottom: var(--space-lg);
-  color: var(--color-grey-dim);
+  color: var(--color-grey);
 }
 
 @media (min-width: 768px) {

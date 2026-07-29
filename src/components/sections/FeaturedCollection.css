@@ -1,5 +1,5 @@
 .featured-collection {
-  background-color: var(--color-black);
+  background-color: var(--color-ivory);
 }
 
 .featured-collection__header {
@@ -12,13 +12,13 @@
 
 .featured-collection__header p {
   font-size: var(--font-size-base);
-  max-width: 420px;
+  max-width: 480px;
 }
 
 .featured-collection__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-md);
+  gap: var(--space-lg);
 }
 
 .featured-collection__cta {
@@ -32,8 +32,8 @@
 }
 
 .featured-collection__note {
-  font-size: var(--font-size-xs);
-  color: var(--color-grey-dim);
+  font-size: var(--font-size-sm);
+  color: var(--color-grey);
   margin-bottom: var(--space-md);
 }
 

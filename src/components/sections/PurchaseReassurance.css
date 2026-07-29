@@ -1,7 +1,5 @@
 .purchase-reassurance {
-  background-color: var(--color-black-card);
-  border-top: 1px solid var(--color-grey-line);
-  border-bottom: 1px solid var(--color-grey-line);
+  background-color: var(--color-stone);
 }
 
 .purchase-reassurance__inner {
@@ -36,6 +34,6 @@
 }
 
 .purchase-reassurance__check {
-  color: var(--color-red);
+  color: var(--color-berry);
   flex-shrink: 0;
 }

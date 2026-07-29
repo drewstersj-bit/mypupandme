@@ -1,6 +1,6 @@
 .announcement-bar {
-  background-color: var(--color-red);
-  padding: 0.45rem var(--space-md);
+  background-color: var(--color-berry);
+  padding: 0.5rem var(--space-md);
   text-align: center;
 }
 
@@ -8,7 +8,7 @@
   color: var(--color-white);
   font-size: var(--font-size-xs);
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0;
 }

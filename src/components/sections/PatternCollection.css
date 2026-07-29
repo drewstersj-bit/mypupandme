@@ -1,6 +1,5 @@
 .pattern-collection {
-  background-color: var(--color-black-light);
-  border-top: 1px solid var(--color-grey-line);
+  background-color: var(--color-stone);
 }
 
 .pattern-collection__header {
@@ -19,25 +18,25 @@
 }
 
 .pattern-collection__tab {
-  padding: 0.5rem 1rem;
-  border: 1.5px solid var(--color-grey-line);
-  border-radius: var(--radius);
+  padding: 0.5rem 1.2rem;
+  border: 2px solid var(--color-grey-light);
+  border-radius: var(--radius-btn);
   font-size: var(--font-size-sm);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-grey);
-  background: transparent;
+  background: var(--color-white);
   transition: all var(--transition-fast);
 }
 
 .pattern-collection__tab:hover {
-  border-color: var(--color-white);
-  color: var(--color-white);
+  border-color: var(--color-berry);
+  color: var(--color-berry);
 }
 
 .pattern-collection__tab--active {
-  border-color: var(--color-red);
-  color: var(--color-red);
-  background-color: rgba(242, 13, 25, 0.08);
+  border-color: var(--color-berry);
+  color: var(--color-white);
+  background-color: var(--color-berry);
 }
 
 .pattern-collection__display {
@@ -47,35 +46,18 @@
   align-items: center;
 }
 
-.pattern-collection__image-fallback {
-  aspect-ratio: 1;
-  max-width: 420px;
-  border-radius: var(--radius);
-  background: linear-gradient(155deg, #1A1A1A 0%, #2A2A2A 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pattern-collection__image-fallback span {
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  color: var(--color-grey-dim);
-}
-
 .pattern-collection__image {
   aspect-ratio: 1;
   max-width: 420px;
   width: 100%;
   border-radius: var(--radius);
   object-fit: cover;
-  background-color: var(--color-black-card);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-card);
 }
 
 .pattern-collection__info h3 {
-  font-family: var(--font-heading);
   margin-bottom: var(--space-sm);
-  color: var(--color-white);
 }
 
 .pattern-collection__info p {
@@ -86,7 +68,7 @@
 .pattern-collection__price {
   font-size: var(--font-size-xl);
   font-weight: 700;
-  color: var(--color-white) !important;
+  color: var(--color-charcoal) !important;
   margin-bottom: var(--space-lg) !important;
 }
 

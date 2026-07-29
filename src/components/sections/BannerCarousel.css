@@ -1,6 +1,6 @@
 .banner-carousel {
   position: relative;
-  background-color: var(--color-black);
+  background-color: var(--color-ivory);
   overflow: hidden;
 }
 
@@ -25,9 +25,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .banner-carousel__slide--active {
-    animation: none;
-  }
+  .banner-carousel__slide--active { animation: none; }
 }
 
 .banner-carousel__image {
@@ -36,12 +34,11 @@
   display: block;
   object-fit: cover;
   max-height: 240px;
+  border-radius: 0;
 }
 
 @media (min-width: 768px) {
-  .banner-carousel__image {
-    max-height: 320px;
-  }
+  .banner-carousel__image { max-height: 320px; }
 }
 
 .banner-carousel__dots {
@@ -57,7 +54,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(41, 37, 38, 0.25);
   border: none;
   padding: 0;
   cursor: pointer;
@@ -65,9 +62,9 @@
 }
 
 .banner-carousel__dot--active {
-  background-color: var(--color-white);
+  background-color: var(--color-berry);
 }
 
 .banner-carousel__dot:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(41, 37, 38, 0.5);
 }

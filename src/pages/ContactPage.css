@@ -23,34 +23,33 @@
 .contact-page__field label {
   font-weight: 600;
   font-size: var(--font-size-sm);
-  color: var(--color-white);
+  color: var(--color-charcoal);
 }
 
 .contact-page__field input,
 .contact-page__field textarea {
-  padding: 0.7rem var(--space-md);
-  border: 1.5px solid var(--color-grey-line);
-  border-radius: var(--radius);
-  font-family: var(--font-body);
+  padding: 0.75rem var(--space-md);
+  border: 2px solid var(--color-grey-light);
+  border-radius: var(--radius-btn);
+  font-family: var(--font-main);
   font-size: var(--font-size-base);
-  color: var(--color-white);
-  background-color: var(--color-black-card);
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
   transition: border-color var(--transition-fast);
 }
 
 .contact-page__field input:focus,
 .contact-page__field textarea:focus {
-  border-color: var(--color-red);
+  border-color: var(--color-berry);
   outline: none;
 }
 
 .contact-page__success {
   padding: var(--space-lg);
-  background-color: rgba(242, 13, 25, 0.08);
-  border-radius: var(--radius);
-  border: 1px solid rgba(242, 13, 25, 0.2);
+  background-color: var(--color-stone);
+  border-radius: var(--radius-btn);
 }
 
 .contact-page__success p {
-  color: var(--color-white);
+  color: var(--color-charcoal);
 }
