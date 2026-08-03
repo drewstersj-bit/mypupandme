@@ -19,6 +19,7 @@ import ContactPage from '@/pages/ContactPage'
 import DeliveryReturnsPage from '@/pages/DeliveryReturnsPage'
 import ReturnsPage from '@/pages/ReturnsPage'
 import AdminPackingSlip from '@/pages/AdminPackingSlip'
+import WholesalePage from '@/pages/WholesalePage'
 import PrivacyPage from '@/pages/PrivacyPage'
 import TermsPage from '@/pages/TermsPage'
 import NotFoundPage from '@/pages/NotFoundPage'
@@ -54,6 +55,7 @@ export default function App() {
         <Route path="/delivery-returns" element={<DeliveryReturnsPage />} />
         <Route path="/returns" element={<ReturnsPage />} />
         <Route path="/admin/packing-slip" element={<AdminPackingSlip />} />
+        <Route path="/wholesale" element={<WholesalePage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="*" element={<NotFoundPage />} />

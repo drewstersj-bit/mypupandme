@@ -1,0 +1,98 @@
+.wholesale-page h1 {
+  margin-bottom: var(--space-md);
+}
+
+.wholesale-page__intro {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.wholesale-page__benefits {
+  background-color: var(--color-stone);
+  padding: var(--space-xl);
+  border-radius: var(--radius);
+  margin-bottom: var(--space-2xl);
+}
+
+.wholesale-page__benefits h2 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-md);
+}
+
+.wholesale-page__benefits ul {
+  padding-left: var(--space-xl);
+}
+
+.wholesale-page__benefits li {
+  list-style: disc;
+  font-size: var(--font-size-sm);
+  color: var(--color-grey);
+  margin-bottom: var(--space-sm);
+  line-height: 1.6;
+}
+
+.wholesale-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.wholesale-page__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.wholesale-page__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.wholesale-page__field label {
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  color: var(--color-charcoal);
+}
+
+.wholesale-page__field input,
+.wholesale-page__field textarea,
+.wholesale-page__field select {
+  padding: 0.75rem var(--space-md);
+  border: 2px solid var(--color-grey-light);
+  border-radius: var(--radius-btn);
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+  transition: border-color var(--transition-fast);
+}
+
+.wholesale-page__field input:focus,
+.wholesale-page__field textarea:focus,
+.wholesale-page__field select:focus {
+  border-color: var(--color-berry);
+  outline: none;
+}
+
+.wholesale-page__success {
+  background-color: var(--color-stone);
+  padding: var(--space-xl);
+  border-radius: var(--radius);
+}
+
+.wholesale-page__success h2 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.wholesale-page__success a {
+  color: var(--color-berry);
+}
+
+@media (max-width: 600px) {
+  .wholesale-page__row {
+    grid-template-columns: 1fr;
+  }
+}
