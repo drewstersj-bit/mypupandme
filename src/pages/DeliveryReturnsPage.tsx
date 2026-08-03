@@ -6,7 +6,7 @@ export default function DeliveryReturnsPage() {
     <>
       <SEOHead
         title="Delivery & Returns | My Pup and Me"
-        description="Free UK delivery on all orders via Royal Mail Tracked 48. Easy returns within 14 days. Shipping and returns handled by My Chi and Me."
+        description="UK delivery £3.99 via Royal Mail Tracked 48. Easy returns within 14 days. Shipping and returns handled by My Chi and Me."
         canonical="/delivery-returns"
       />
 
@@ -17,7 +17,7 @@ export default function DeliveryReturnsPage() {
             <p className="delivery-returns-page__updated">Last updated: August 2026</p>
 
             <div className="delivery-returns-page__highlight">
-              <p><strong>Free UK delivery</strong> on all orders via Royal Mail Tracked 48.</p>
+              <p><strong>UK delivery: £3.99</strong> via Royal Mail Tracked 48.</p>
             </div>
 
             <h2>Delivery</h2>
