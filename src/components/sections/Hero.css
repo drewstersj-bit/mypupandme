@@ -85,7 +85,7 @@
 
 @media (min-width: 768px) {
   .hero__ctas {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 }
 
@@ -106,6 +106,5 @@
 
   .hero__content {
     margin-left: auto;
-    text-align: right;
   }
 }
