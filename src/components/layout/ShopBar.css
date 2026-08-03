@@ -1,13 +1,14 @@
 .shop-bar {
   background-color: var(--color-blush);
-  padding: 0.55rem 0;
+  padding: 0.45rem 0;
 }
 
 .shop-bar__inner {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: var(--space-sm);
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -20,6 +21,14 @@
 .shop-bar__text strong {
   font-weight: 700;
   color: var(--color-berry);
+}
+
+.shop-bar__text-desktop {
+  display: none;
+}
+
+.shop-bar__text-mobile {
+  display: inline;
 }
 
 .shop-bar__btn {
@@ -40,9 +49,16 @@
 
 @media (min-width: 768px) {
   .shop-bar__inner {
-    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: var(--space-lg);
-    text-align: left;
+  }
+
+  .shop-bar__text-desktop {
+    display: inline;
+  }
+
+  .shop-bar__text-mobile {
+    display: none;
   }
 }
