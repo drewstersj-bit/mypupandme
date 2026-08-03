@@ -7,11 +7,11 @@ export default function Hero() {
     <section className="hero" aria-labelledby="hero-heading">
       <div className="hero__image-bg">
         <img
-          src="/assets/lifestyle/Tweed_Zac_3_800x800.jpg"
-          alt="Small dog wearing a My Pup and Me Classic Tweed harness outdoors"
+          src="/assets/banners/mypupandme_home.jpg"
+          alt="Small dog wearing a My Pup and Me harness"
           className="hero__bg-img"
-          width="800"
-          height="800"
+          width="1600"
+          height="900"
         />
         <div className="hero__overlay" />
       </div>
