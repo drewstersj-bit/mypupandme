@@ -29,7 +29,8 @@
   text-decoration: underline;
 }
 
-.delivery-returns-page ol {
+.delivery-returns-page ol,
+.delivery-returns-page ul {
   padding-left: var(--space-xl);
   margin-bottom: var(--space-lg);
 }
@@ -39,6 +40,10 @@
   line-height: 1.7;
   color: var(--color-grey);
   list-style: decimal;
+}
+
+.delivery-returns-page ul li {
+  list-style: disc;
 }
 
 .delivery-returns-page__highlight {

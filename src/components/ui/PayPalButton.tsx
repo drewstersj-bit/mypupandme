@@ -6,12 +6,14 @@ const PAYPAL_CLIENT_ID = import.meta.env.VITE_PAYPAL_CLIENT_ID || 'sb'
 
 interface PayPalButtonProps {
   onSuccess: () => void
+  orderTotal?: number
 }
 
-export default function PayPalButton({ onSuccess }: PayPalButtonProps) {
+export default function PayPalButton({ onSuccess, orderTotal }: PayPalButtonProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const { items, totalPrice } = useCart()
   const buttonsRendered = useRef(false)
+  const finalTotal = orderTotal ?? totalPrice
 
   const renderButtons = useCallback(() => {
     if (!containerRef.current || buttonsRendered.current) return
@@ -37,9 +39,10 @@ export default function PayPalButton({ onSuccess }: PayPalButtonProps) {
             description: 'My Pup and Me order',
             amount: {
               currency_code: 'GBP',
-              value: totalPrice.toFixed(2),
+              value: finalTotal.toFixed(2),
               breakdown: {
                 item_total: { currency_code: 'GBP', value: totalPrice.toFixed(2) },
+                shipping: { currency_code: 'GBP', value: (finalTotal - totalPrice).toFixed(2) },
               },
             },
             items: items.map((item) => ({
@@ -62,7 +65,7 @@ export default function PayPalButton({ onSuccess }: PayPalButtonProps) {
         alert('Payment could not be completed. Please try again.')
       },
     }).render(containerRef.current)
-  }, [items, totalPrice, onSuccess])
+  }, [items, totalPrice, finalTotal, onSuccess])
 
   useEffect(() => {
     if (items.length === 0) return
@@ -83,7 +86,7 @@ export default function PayPalButton({ onSuccess }: PayPalButtonProps) {
       script.onload = () => renderButtons()
       document.head.appendChild(script)
     }
-  }, [items, totalPrice, renderButtons])
+  }, [items, finalTotal, renderButtons])
 
   if (items.length === 0) return null
 

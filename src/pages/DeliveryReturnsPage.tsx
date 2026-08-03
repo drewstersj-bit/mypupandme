@@ -17,13 +17,22 @@ export default function DeliveryReturnsPage() {
             <p className="delivery-returns-page__updated">Last updated: August 2026</p>
 
             <div className="delivery-returns-page__highlight">
-              <p><strong>UK delivery: £3.99</strong> via Royal Mail Tracked 48.</p>
+              <p><strong>Free UK delivery on orders over £75</strong> via Royal Mail Tracked 48. Standard delivery from £3.99.</p>
             </div>
 
             <h2>Delivery</h2>
 
             <h3>How we ship</h3>
-            <p>All orders are sent via <strong>Royal Mail Tracked 48</strong>. This is a tracked service with an estimated delivery time of 2-3 working days from despatch.</p>
+            <p>We offer the following delivery options for UK orders:</p>
+            <ul>
+              <li><strong>Royal Mail Tracked 48</strong> - 2-3 working days from first scan - £3.99</li>
+              <li><strong>Royal Mail Tracked 24</strong> - 1-2 working days from first scan - £5.75</li>
+              <li><strong>Free delivery (RM Tracked 48)</strong> - on orders of £75.00 and over</li>
+            </ul>
+            <p>For international orders:</p>
+            <ul>
+              <li><strong>Royal Mail International Tracked and Signed</strong> - £25.00</li>
+            </ul>
 
             <h3>Despatch times</h3>
             <p>We aim to despatch all orders within 2 working days of payment being received. Orders placed on weekends or bank holidays will be despatched on the next working day.</p>
