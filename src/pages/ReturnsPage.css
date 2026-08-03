@@ -1,0 +1,96 @@
+.returns-page h1 {
+  margin-bottom: var(--space-md);
+}
+
+.returns-page__intro {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.returns-page__info {
+  background-color: var(--color-stone);
+  padding: var(--space-lg);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-2xl);
+}
+
+.returns-page__info h3 {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.returns-page__info ul {
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.returns-page__info li {
+  list-style: disc;
+  font-size: var(--font-size-sm);
+  color: var(--color-grey);
+  margin-bottom: var(--space-xs);
+}
+
+.returns-page__info p {
+  font-size: var(--font-size-sm);
+}
+
+.returns-page__info a {
+  color: var(--color-berry);
+  text-decoration: underline;
+}
+
+.returns-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  max-width: 520px;
+}
+
+.returns-page__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.returns-page__field label {
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  color: var(--color-charcoal);
+}
+
+.returns-page__field input,
+.returns-page__field textarea,
+.returns-page__field select {
+  padding: 0.75rem var(--space-md);
+  border: 2px solid var(--color-grey-light);
+  border-radius: var(--radius-btn);
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+  transition: border-color var(--transition-fast);
+}
+
+.returns-page__field input:focus,
+.returns-page__field textarea:focus,
+.returns-page__field select:focus {
+  border-color: var(--color-berry);
+  outline: none;
+}
+
+.returns-page__success {
+  background-color: var(--color-stone);
+  padding: var(--space-xl);
+  border-radius: var(--radius-sm);
+}
+
+.returns-page__success h2 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.returns-page__success a {
+  color: var(--color-berry);
+}

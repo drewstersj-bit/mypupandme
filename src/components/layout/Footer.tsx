@@ -35,7 +35,8 @@ export default function Footer() {
             <ul className="footer__list">
               <li><Link to="/collection" className="footer__link">All Products</Link></li>
               <li><Link to="/size-guide" className="footer__link">Size Guide</Link></li>
-              <li><a href="https://mychiandme.co.uk/pages/delivery-and-returns-info" target="_blank" rel="noopener noreferrer" className="footer__link">Delivery &amp; Returns</a></li>
+              <li><Link to="/delivery-returns" className="footer__link">Delivery &amp; Returns</Link></li>
+              <li><Link to="/returns" className="footer__link">Returns Centre</Link></li>
             </ul>
           </div>
 

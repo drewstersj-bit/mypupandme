@@ -16,6 +16,8 @@ import JournalPage from '@/pages/JournalPage'
 import ArticlePage from '@/pages/ArticlePage'
 import PillarGuidePage from '@/pages/PillarGuidePage'
 import ContactPage from '@/pages/ContactPage'
+import DeliveryReturnsPage from '@/pages/DeliveryReturnsPage'
+import ReturnsPage from '@/pages/ReturnsPage'
 import PrivacyPage from '@/pages/PrivacyPage'
 import TermsPage from '@/pages/TermsPage'
 import NotFoundPage from '@/pages/NotFoundPage'
@@ -48,6 +50,8 @@ export default function App() {
         <Route path="/journal/:slug" element={<ArticlePage />} />
         <Route path="/small-dog-harness-guide" element={<PillarGuidePage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/delivery-returns" element={<DeliveryReturnsPage />} />
+        <Route path="/returns" element={<ReturnsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="*" element={<NotFoundPage />} />
