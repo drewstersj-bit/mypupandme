@@ -73,7 +73,7 @@
 
 .hero__subheading {
   font-size: var(--font-size-md);
-  color: var(--color-grey);
+  color: var(--color-white);
   margin-bottom: var(--space-xl);
   line-height: 1.7;
 }
