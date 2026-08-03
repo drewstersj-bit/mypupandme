@@ -80,7 +80,7 @@ export default function AdminPackingSlip() {
     return (
       <div className="packing-slip" id="packing-slip-print">
         <div className="packing-slip__header">
-          <h1 className="packing-slip__brand">MY PUP AND ME</h1>
+          <img src="/onwhite.jpg" alt="My Pup and Me" className="packing-slip__logo" width="200" height="50" />
           <div className="packing-slip__meta">
             <p><strong>Order</strong> #{orderNumber}</p>
             <p><strong>Date</strong> {orderDate}</p>
@@ -119,6 +119,7 @@ export default function AdminPackingSlip() {
         </table>
 
         <div className="packing-slip__returns">
+          <p className="packing-slip__thankyou">Thank you for shopping with My Pup and Me</p>
           <p>We accept returns within 14 DAYS OF ORDER of pristine items with tags attached in their original packaging for a refund or exchange. We reserve the right to refuse returns on items which are not in an as new resale-able condition with labels attached or missing packaging. Faulty goods will be refunded or exchanged. Some items where stated on our product description cannot be returned. To arrange your return please visit mypupandme.co.uk/returns</p>
           <p className="packing-slip__contact">If you have any questions, please do get in contact.</p>
           <p className="packing-slip__footer-address">My Pup and Me / Address P.O. Box 754 / Oldham, OL1 9QN / United Kingdom / Email info@mychiandme.co.uk</p>
