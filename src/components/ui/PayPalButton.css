@@ -1,0 +1,10 @@
+.paypal-button-container {
+  margin-top: var(--space-sm);
+}
+
+.paypal-button-container__note {
+  font-size: var(--font-size-xs);
+  color: var(--color-grey);
+  text-align: center;
+  margin-top: var(--space-sm);
+}

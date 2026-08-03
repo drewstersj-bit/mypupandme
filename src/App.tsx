@@ -1,20 +1,23 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { CartProvider } from '@/context/CartContext'
 import AnnouncementBar from '@/components/layout/AnnouncementBar'
 import Header from '@/components/layout/Header'
 import ShopBar from '@/components/layout/ShopBar'
 import Footer from '@/components/layout/Footer'
+import CartDrawer from '@/components/ui/CartDrawer'
 import StickyMobileCTA from '@/components/ui/StickyMobileCTA'
 import HomePage from '@/pages/HomePage'
 import CollectionPage from '@/pages/CollectionPage'
+import ProductPage from '@/pages/ProductPage'
 import SizeGuidePage from '@/pages/SizeGuidePage'
 import OurStoryPage from '@/pages/OurStoryPage'
 import JournalPage from '@/pages/JournalPage'
 import ArticlePage from '@/pages/ArticlePage'
+import PillarGuidePage from '@/pages/PillarGuidePage'
 import ContactPage from '@/pages/ContactPage'
 import PrivacyPage from '@/pages/PrivacyPage'
 import TermsPage from '@/pages/TermsPage'
-import PillarGuidePage from '@/pages/PillarGuidePage'
 import NotFoundPage from '@/pages/NotFoundPage'
 
 function ScrollToTop() {
@@ -27,7 +30,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <>
+    <CartProvider>
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>
@@ -38,6 +41,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/collection" element={<CollectionPage />} />
+        <Route path="/product/:slug" element={<ProductPage />} />
         <Route path="/size-guide" element={<SizeGuidePage />} />
         <Route path="/our-story" element={<OurStoryPage />} />
         <Route path="/journal" element={<JournalPage />} />
@@ -49,7 +53,8 @@ export default function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
+      <CartDrawer />
       <StickyMobileCTA />
-    </>
+    </CartProvider>
   )
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { trackOutboundClick, SHOP_URL } from '@/utils/tracking'
+import { useCart } from '@/context/CartContext'
 import './Header.css'
 
 const navLinks = [
@@ -14,6 +15,7 @@ const navLinks = [
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
+  const { totalItems, openCart } = useCart()
 
   const toggleMenu = () => setMenuOpen(!menuOpen)
   const closeMenu = () => setMenuOpen(false)
@@ -47,6 +49,12 @@ export default function Header() {
         </nav>
 
         <div className="header__actions">
+          <button className="header__cart-btn" onClick={openCart} aria-label={`Shopping bag, ${totalItems} items`}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            {totalItems > 0 && <span className="header__cart-count">{totalItems}</span>}
+          </button>
           <a
             href={SHOP_URL}
             className="header__cta btn btn--primary btn--sm"

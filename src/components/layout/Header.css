@@ -56,6 +56,37 @@
   gap: var(--space-md);
 }
 
+.header__cart-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--color-charcoal);
+  transition: color var(--transition-fast);
+}
+
+.header__cart-btn:hover {
+  color: var(--color-berry);
+}
+
+.header__cart-count {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-berry);
+  color: var(--color-white);
+  font-size: 0.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header__social-link {
   display: none;
   color: var(--color-grey);
