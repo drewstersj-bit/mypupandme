@@ -20,15 +20,7 @@
 }
 
 .hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(250, 247, 242, 0.92) 0%, rgba(250, 247, 242, 0.7) 45%, rgba(250, 247, 242, 0.1) 100%);
-}
-
-@media (max-width: 767px) {
-  .hero__overlay {
-    background: linear-gradient(to bottom, rgba(250, 247, 242, 0.15) 0%, rgba(250, 247, 242, 0.7) 50%, rgba(250, 247, 242, 0.95) 100%);
-  }
+  display: none;
 }
 
 .hero__container {
