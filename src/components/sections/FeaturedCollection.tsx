@@ -1,5 +1,6 @@
 import { getFeaturedHarnesses } from '@/data/products'
 import ProductCard from '../ui/ProductCard'
+import Button from '../ui/Button'
 import { trackOutboundClick, SHOP_URL } from '@/utils/tracking'
 import './FeaturedCollection.css'
 
@@ -19,14 +20,16 @@ export default function FeaturedCollection() {
           ))}
         </div>
         <div className="featured-collection__footer">
-          <p className="featured-collection__note">Purchases are completed securely through My Chi and Me, our sister website and small-dog specialist.</p>
+          <Button to="/collection" variant="primary" size="md">
+            Shop the Collection
+          </Button>
           <a
             href={SHOP_URL}
-            className="btn btn--outline btn--md"
-            onClick={() => trackOutboundClick({ button_location: 'featured_collection_cta', destination_url: SHOP_URL })}
+            className="featured-collection__wider-link"
+            onClick={() => trackOutboundClick({ button_location: 'featured_collection_wider', destination_url: SHOP_URL })}
           >
-            Shop the full collection at My Chi and Me
-            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+            Or shop a wider range of products at My Chi and Me
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <path d="M2 10L10 2M10 2H4M10 2v6"/>
             </svg>
           </a>

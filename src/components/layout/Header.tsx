@@ -60,7 +60,7 @@ export default function Header() {
             className="header__cta btn btn--primary btn--sm"
             onClick={() => trackOutboundClick({ button_location: 'header_cta', destination_url: SHOP_URL })}
           >
-            Buy at My Chi and Me
+            My Chi and Me
             <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <path d="M2 10L10 2M10 2H4M10 2v6"/>
             </svg>
@@ -107,7 +107,7 @@ export default function Header() {
                 onClick={() => { closeMenu(); trackOutboundClick({ button_location: 'mobile_menu_cta', destination_url: SHOP_URL }); }}
                 tabIndex={menuOpen ? 0 : -1}
               >
-                Buy at My Chi and Me
+                Browse My Chi and Me
               </a>
             </li>
           </ul>

@@ -72,6 +72,20 @@
   margin-bottom: var(--space-lg) !important;
 }
 
+.pattern-collection__wider-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: var(--font-size-sm);
+  color: var(--color-grey);
+  margin-top: var(--space-md);
+  transition: color var(--transition-fast);
+}
+
+.pattern-collection__wider-link:hover {
+  color: var(--color-berry);
+}
+
 @media (min-width: 768px) {
   .pattern-collection__display {
     grid-template-columns: 1fr 1fr;

@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { patterns, getProductsByPattern } from '@/data/products'
+import { trackOutboundClick, SHOP_URL } from '@/utils/tracking'
 import './PatternCollection.css'
 
 export default function PatternCollection() {
@@ -45,11 +47,18 @@ export default function PatternCollection() {
                 <h3>{harness.name.replace('Luxury ', '')}</h3>
                 <p>{harness.shortDescription}</p>
                 <p className="pattern-collection__price">£{harness.price.toFixed(2)}</p>
+                <Link to={`/product/${harness.slug}`} className="btn btn--primary btn--md">
+                  Buy Here
+                </Link>
                 <a
-                  href={harness.shopUrl}
-                  className="btn btn--primary btn--md"
+                  href={SHOP_URL}
+                  className="pattern-collection__wider-link"
+                  onClick={() => trackOutboundClick({ button_location: 'pattern_wider', destination_url: SHOP_URL })}
                 >
-                  Buy at My Chi and Me
+                  Shop a wider range at My Chi and Me
+                  <svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                    <path d="M2 10L10 2M10 2H4M10 2v6"/>
+                  </svg>
                 </a>
               </div>
             </>
