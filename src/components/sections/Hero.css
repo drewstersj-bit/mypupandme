@@ -72,7 +72,7 @@
 
 .hero__subheading {
   font-size: var(--font-size-md);
-  color: var(--color-grey);
+  color: var(--color-blush);
   margin-bottom: var(--space-xl);
   line-height: 1.7;
 }
@@ -81,6 +81,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .hero__ctas {
+    justify-content: flex-end;
+  }
 }
 
 .hero__trust-line {
@@ -96,5 +102,10 @@
 
   .hero__subheading {
     font-size: var(--font-size-lg);
+  }
+
+  .hero__content {
+    margin-left: auto;
+    text-align: right;
   }
 }
