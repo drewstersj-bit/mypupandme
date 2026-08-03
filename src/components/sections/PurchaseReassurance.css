@@ -37,3 +37,11 @@
   color: var(--color-berry);
   flex-shrink: 0;
 }
+
+.purchase-reassurance__payments {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  opacity: 0.8;
+}
